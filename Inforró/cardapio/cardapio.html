@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inforró · Cardápio do Arraiá Geek do IFRN</title>
+  <meta name="description" content="Cardápio digital do Inforró: lanches, doces, bebidas e o almoço especial do dia. Arraiá da turma de Informática do IFRN." />
+  <meta property="og:title" content="Inforró · Arraiá Geek do IFRN" />
+  <meta property="og:description" content="O cardápio digital do nosso arraiá. Bora encher o bucho?" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cardapio.css" />
+</head>
+<body>
+
+  <!-- Bunting top -->
+  <div class="bunting-banner" aria-hidden="true"></div>
+
+  <!-- ── HERO ──────────────────────────────── -->
+  <section class="hero">
+    <p class="terminal-cmd"><span class="prompt">&gt;</span> ./inforro --start</p>
+    <img src="inforró.png" alt="Inforró" class="hero-logo" />
+    <p class="terminal-typing" id="terminal-body"></p>
+  </section>
+
+
+  <!-- ── ALMOÇO CARD (3 pratos / 3 dias) ──── -->
+  <section class="almoco-section">
+    <div class="almoco-card">
+      <div class="almoco-card-header">
+        <div>
+          <p class="pixel-label">// menu_principal</p>
+          <h2 class="almoco-card-title">Almoço</h2>
+          <p class="almoco-card-sub">Três pratos caprichados, três dias diferentes.<br>Reserve antes que esgote</p>
+        </div>
+        <div class="starburst" aria-label="Apenas R$ 12,00">
+          <span class="starburst-top">Apenas</span>
+          <span class="starburst-price">R$ 12,00</span>
+        </div>
+      </div>
+
+      <div class="meal-cards-row" id="meal-cards-row">
+        <!-- rendered by JS -->
+      </div>
+
+      <div class="accompaniments-bar">
+        <span class="accomp-label">ACOMPANHA</span>
+        <span class="accomp-pill">Arroz</span>
+        <span class="accomp-plus">+</span>
+        <span class="accomp-pill">Batata palha</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ALLERGEN LEGEND ───────────────────── -->
+  <section class="legend-section">
+    <div class="legend-card">
+      <div class="legend-header">
+        <span class="pixel-label">// legenda_alergenicos.json</span>
+        <span class="legend-hint">fique de olho antes de pedir</span>
+      </div>
+      <div class="legend-grid" id="legend-grid"></div>
+    </div>
+  </section>
+
+  <!-- ── TABS ──────────────────────────────── -->
+  <div class="tabs-bar" id="tabs-bar">
+    <div class="tabs-inner">
+      <button class="tab-btn active" data-tab="lanches">Lanches</button>
+      <button class="tab-btn" data-tab="doces">Doces</button>
+      <button class="tab-btn" data-tab="bebidas">Bebidas</button>
+    </div>
+  </div>
+
+  <!-- ── MENU SECTION ──────────────────────── -->
+  <section class="menu-section">
+    <div class="menu-header">
+      <h2 class="menu-title" id="menu-title">Lanches</h2>
+      <span class="item-count" id="item-count"></span>
+    </div>
+    <div id="menu-content"></div>
+  </section>
+
+  <!-- ── SOBRE ─────────────────────────────── -->
+  <section class="sobre-section">
+    <div class="sobre-card">
+      <div class="sobre-dots" aria-hidden="true"></div>
+      <span class="sobre-star top-right" aria-hidden="true">✦</span>
+      <span class="sobre-star bottom-left" aria-hidden="true">✦</span>
+      <div class="sobre-content">
+        <p class="pixel-label accent-label">// sobre.md</p>
+        <div class="sobre-title-row">
+          <h2 class="sobre-title">Sobre o Inforró</h2>
+          <span class="sobre-line"></span>
+        </div>
+        <p class="sobre-text">
+          O <strong class="accent-strong">Inforró</strong> é o arraiá da turma de Informática do IFRN.
+          Toda a renda ajuda a financiar projetos, eventos e formaturas da galera de TI.
+          Comer aqui é apoiar nossos sonhos — obrigado por colar com a gente!
+        </p>
+        <div class="tag-list">
+          <span class="tag">#turmaDeTI</span>
+          <span class="tag">#arraiáGeek</span>
+          <span class="tag">#IFRN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="https://instagram.com/inforro.ifrn" target="_blank" rel="noopener" class="pix-btn">
+        @4.8401.111
+      </a>
+      <p class="footer-text">Valeu pelo apoio · feito com 💜 pela turma de TI · IFRN</p>
+    </div>
+    <div class="bunting-banner" aria-hidden="true"></div>
+  </footer>
+
+  <!-- ── MODAL ──────────────────────────────── -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-item-name">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Fechar">✕</button>
+      <div class="modal-img" id="modal-img"></div>
+      <div class="modal-body">
+        <h2 class="modal-name" id="modal-item-name"></h2>
+        <p class="modal-desc" id="modal-item-desc"></p>
+
+        <div class="modal-section" id="modal-allergens-wrap">
+          <p class="pixel-label purple-label">// alergênicos</p>
+          <div class="modal-allergen-list" id="modal-allergen-list"></div>
+        </div>
+
+        <div class="modal-price-row">
+          <span class="modal-price" id="modal-price"></span>
+        </div>
+
+        <div class="modal-section" id="modal-ingredients-wrap">
+          <p class="pixel-label purple-label">// ingredientes</p>
+          <div class="modal-ingredient-list" id="modal-ingredient-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="cardapio.js"></script>
+</body>
+</html>
