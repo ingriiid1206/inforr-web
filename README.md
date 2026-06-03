@@ -21,7 +21,7 @@ Este projeto reúne em um só lugar:
 Abra `Inforró/cardapio/cardapio.html` no navegador.
 
 ### LAN House
-Abra `lanhouse/lanhouse.html` ou `lanhouse/index.html` no navegador.
+Abra `lanhouse/lanhouse.html` no navegador.
 
 ### Aplicação React
 ```bash
