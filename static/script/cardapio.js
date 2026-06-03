@@ -106,6 +106,13 @@ const MENU = [
     alergenicos: ["leite"],
     ingredientes: ["Leite","Açúcar","Amido de milho","Baunilha"],
   },
+  {
+    id: 18, nome: "Palha Italiana", sub: "chocolate & biscoito",
+    desc: "Tradicional doce de chocolate com pedacinhos crocantes de biscoito.",
+    categoria: "doces", preco: 4.50, img: "palha.png",
+    alergenicos: ["leite"],
+    ingredientes: ["Chocolate","Biscoito","Leite condensado","Manteiga"],
+  },
 
   // BEBIDAS
   {
