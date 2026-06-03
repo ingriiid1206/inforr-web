@@ -388,7 +388,7 @@ body > .bunting-banner:first-child {
 }
 
 .legend-icon {
-  font-size: 1.5rem;
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -578,12 +578,12 @@ body > .bunting-banner:first-child {
 }
 
 .allergen-icon-sm {
-  font-size: 1.1rem;
+  font-size: 2.2rem;
   line-height: 1;
   background: var(--bg);
   border: 1.5px solid var(--card-border);
   border-radius: .4rem;
-  padding: 2px 4px;
+  padding: 4px 8px;
 }
 
 /* ── DRINKS LIST ──────────────────────────────── */
