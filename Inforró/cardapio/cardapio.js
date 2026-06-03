@@ -4,17 +4,17 @@
 
 // ── ALLERGEN DATA ──────────────────────────────
 const ALLERGENS = {
-  gluten:   { img: "foto.png", label: "Contém glúten", icon: "foto.png" },
-  leite:    { img: "foto.png", label: "Contém leite", icon: "foto.png" },
-  ovo:      { img: "foto.png", label: "Contém ovo", icon: "foto.png" },
-  amendoim: { img: "foto.png", label: "Contém amendoim", icon: "foto.png" },
+  gluten:   { img: "../../assets/foto.png", label: "Contém glúten", icon: "../../assets/foto.png" },
+  leite:    { img: "../../assets/foto.png", label: "Contém leite", icon: "../../assets/foto.png" },
+  ovo:      { img: "../../assets/foto.png", label: "Contém ovo", icon: "../../assets/foto.png" },
+  amendoim: { img: "../../assets/foto.png", label: "Contém amendoim", icon: "../../assets/foto.png" },
 };
 
 // ── 3-DAY LUNCH DATA ───────────────────────────
 const REFEICOES = [
-  { dia: "1º dia", data: "16/06", nome: "Panqueca",      img: "foto.png" },
-  { dia: "2º dia", data: "17/06", nome: "Torta de Frango", img: "foto.png" },
-  { dia: "3º dia", data: "18/06", nome: "Lasanha",       img: "foto.png" },
+  { dia: "1º dia", data: "16/06", nome: "Panqueca",      img: "../../assets/panqueca.png" },
+  { dia: "2º dia", data: "17/06", nome: "Torta de Frango", img: "../../assets/torta-frango.png" },
+  { dia: "3º dia", data: "18/06", nome: "Lasanha",       img: "../../assets/lasanha.png" },
 ];
 
 // ── MENU DATA ──────────────────────────────────
@@ -23,42 +23,42 @@ const MENU = [
   {
     id: 1, nome: "Disco Voador", sub: "Minipizza",
     desc: "Mini pizza assada na hora com molho especial e muçarela derretida.",
-    categoria: "lanches", preco: 6.00, img: "foto.png",
+    categoria: "lanches", preco: 6.00, img: "../../assets/disco-voador.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Massa","Molho de tomate","Muçarela"],
   },
   {
     id: 2, nome: "Cachorro-Quente", sub: "",
     desc: "Hot dog clássico com salsicha, molho especial e purê de batata.",
-    categoria: "lanches", preco: 6.00, img: "foto.png",
+    categoria: "lanches", preco: 6.00, img: "../../assets/cachorro-quente.png",
     alergenicos: ["gluten"],
     ingredientes: ["Pão de hot dog","Salsicha","Purê de batata","Molho"],
   },
   {
     id: 3, nome: "Crepe Segundo", sub: "Passou de primeira no sabor",
     desc: "Crepe recheado com frango e catupiry, crocante por fora e cremoso por dentro.",
-    categoria: "lanches", preco: 6.00, img: "foto.png",
+    categoria: "lanches", preco: 6.00, img: "../../assets/crepe-segundo.png",
     alergenicos: ["gluten","leite","ovo"],
     ingredientes: ["Massa de crepe","Frango desfiado","Catupiry"],
   },
   {
     id: 4, nome: "Galo Quente", sub: "",
     desc: "Misto quente turbinado com frango desfiado e queijo derretido.",
-    categoria: "lanches", preco: 6.00, img: "foto.png",
+    categoria: "lanches", preco: 6.00, img: "../../assets/galo-quente.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Pão de forma","Frango desfiado","Queijo"],
   },
   {
     id: 5, nome: "Baião de Bug", sub: "Clássico nordestino",
     desc: "Arroz com feijão verde, queijo coalho e carne seca. Erro 404: fome não encontrada.",
-    categoria: "lanches", preco: 7.00, img: "foto.png",
+    categoria: "lanches", preco: 7.00, img: "../../assets/baiao-de-bug.png",
     alergenicos: ["leite"],
     ingredientes: ["Arroz","Feijão verde","Queijo coalho","Carne seca"],
   },
   {
     id: 6, nome: "Coxinha Stack", sub: "Overflow de sabor",
     desc: "Coxinha crocante de frango com catupiry. Uma pilha de sabor na sua boca.",
-    categoria: "lanches", preco: 5.00, img: "foto.png",
+    categoria: "lanches", preco: 5.00, img: "../../assets/coxinha-stack.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Massa de coxinha","Frango","Catupiry"],
   },
@@ -67,28 +67,28 @@ const MENU = [
   {
     id: 7, nome: "Bolo Junino", sub: "de milho",
     desc: "Bolo de milho fofinho com calda de leite condensado. Receita da vovó compilada com sucesso.",
-    categoria: "doces", preco: 5.00, img: "foto.png",
+    categoria: "doces", preco: 5.00, img: "../../assets/bolo-junino.png",
     alergenicos: ["gluten","leite","ovo"],
     ingredientes: ["Milho verde","Ovos","Leite condensado","Margarina","Farinha"],
   },
   {
     id: 8, nome: "Paçoca Pointer", sub: "aponta pro sabor",
     desc: "Paçoca caseira feita com amendoim torrado. Simples, direto e delicioso.",
-    categoria: "doces", preco: 3.00, img: "foto.png",
+    categoria: "doces", preco: 3.00, img: "../../assets/pacoca-pointer.png",
     alergenicos: ["amendoim"],
     ingredientes: ["Amendoim torrado","Açúcar","Sal"],
   },
   {
     id: 9, nome: "Pé-de-Moleque.exe", sub: "rodando no açúcar",
     desc: "Pé-de-moleque crocante feito na hora. Sem dependências, só sabor.",
-    categoria: "doces", preco: 3.00, img: "foto.png",
+    categoria: "doces", preco: 3.00, img: "../../assets/pe-de-moleque.png",
     alergenicos: ["amendoim"],
     ingredientes: ["Amendoim","Rapadura","Açúcar"],
   },
   {
     id: 10, nome: "Canjica de Deploy", sub: "servida quentinha",
     desc: "Canjica cremosa de milho branco com leite de coco e canela.",
-    categoria: "doces", preco: 4.00, img: "foto.png",
+    categoria: "doces", preco: 4.00, img: "../../assets/canjica-deploy.png",
     alergenicos: ["leite"],
     ingredientes: ["Milho branco","Leite de coco","Leite","Canela","Cravo"],
   },
@@ -96,23 +96,23 @@ const MENU = [
   // BEBIDAS
   {
     id: 11, nome: "Refri (1L)",        sub: "", desc: "",
-    categoria: "bebidas", preco: 6.00, img: "foto.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 6.00, img: "../../assets/refri-1l.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 12, nome: "Refri (Lata)",      sub: "", desc: "",
-    categoria: "bebidas", preco: 6.00, img: "foto.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 6.00, img: "../../assets/refri-lata.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 13, nome: "Refri (Garrafinha)", sub: "", desc: "",
-    categoria: "bebidas", preco: 6.00, img: "foto.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 6.00, img: "../../assets/refri-garrafinha.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 14, nome: "Suco de Maracujá",      sub: "", desc: "",
-    categoria: "bebidas", preco: 5.00, img: "foto.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 5.00, img: "../../assets/suco-maracuja.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 15, nome: "Suco de manga",              sub: "", desc: "",
-    categoria: "bebidas", preco: 2.00, img: "foto.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 2.00, img: "../../assets/suco-manga.png", alergenicos: [], ingredientes: [],
   },
 ];
 

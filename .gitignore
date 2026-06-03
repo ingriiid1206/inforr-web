@@ -14,3 +14,4 @@ package-lock.json
 bun.lock
 pnpm-lock.yaml
 routeTree.gen.ts
+inforr-web/
