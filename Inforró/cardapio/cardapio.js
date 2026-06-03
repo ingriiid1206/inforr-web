@@ -4,10 +4,10 @@
 
 // ── ALLERGEN DATA ──────────────────────────────
 const ALLERGENS = {
-  gluten:   { img: "foto.png", label: "Contém glúten", icon: "gluten.png" },
-  leite:    { img: "foto.png", label: "Contém leite", icon: "leite.png" },
-  ovo:      { img: "foto.png", label: "Contém ovo", icon: "ovo.png" },
-  amendoim: { img: "foto.png", label: "Contém amendoim", icon: "amendoim.png" },
+  gluten:   { label: "Contém glúten", icon: "gluten.png" },
+  leite:    { label: "Contém leite", icon: "leite.png" },
+  ovo:      { label: "Contém ovo", icon: "ovo.png" },
+  amendoim: { label: "Contém amendoim", icon: "amendoin.png" },
 };
 
 // ── 3-DAY LUNCH DATA ───────────────────────────
@@ -121,12 +121,8 @@ const MENU = [
     categoria: "bebidas", preco: 6.00, img: "refrigarrafinha.png", alergenicos: [], ingredientes: [],
   },
   {
-    id: 17, nome: "Suco de Maracujá",      sub: "", desc: "",
-    categoria: "bebidas", preco: 5.00, img: "maracuja.png", alergenicos: [], ingredientes: [],
-  },
-  {
-    id: 18, nome: "Suco de manga",              sub: "", desc: "",
-    categoria: "bebidas", preco: 2.00, img: "manga.png", alergenicos: [], ingredientes: [],
+    id: 17, nome: "Suco",      sub: "", desc: "",
+    categoria: "bebidas", preco: 5.00, img: "suco.png", alergenicos: [], ingredientes: [],
   },
 ];
 

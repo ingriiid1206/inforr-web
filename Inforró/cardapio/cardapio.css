@@ -169,9 +169,10 @@ body > .bunting-banner:first-child {
 .almoco-card-header {
   padding: 1.75rem 1.75rem 1rem;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .almoco-card-title {
@@ -186,14 +187,15 @@ body > .bunting-banner:first-child {
   font-size: .95rem;
   color: var(--primary-mid);
   line-height: 1.5;
+  max-width: 420px;
 }
 
 /* Starburst badge */
 /* Container da Imagem com Texto sobreposto */
 .starburst {
   position: relative;
-  width: 180px;
-  height: 180px;
+  width: 170px;
+  height: 170px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -201,9 +203,8 @@ body > .bunting-banner:first-child {
   justify-content: center;
   text-align: center;
 
-  /* Adiciona a sua foto como plano de fundo */
-  background-image: url("../../assets/foto.png");
-  background-size: contain;
+  background-image: url("estrela.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -212,18 +213,19 @@ body > .bunting-banner:first-child {
 .starburst-price {
   position: relative;
   z-index: 1;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .starburst-top {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--primary);
   display: block;
+  text-transform: uppercase;
 }
 
 .starburst-price {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 800;
   color: var(--primary);
   display: block;
@@ -232,15 +234,15 @@ body > .bunting-banner:first-child {
 /* Meal day cards */
 .meal-cards-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: .9rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
   padding: 0 1.25rem 1.25rem;
 }
 
 .meal-card {
   background: var(--card);
   border: 2px solid var(--primary);
-  border-radius: 1rem;
+  border-radius: 1.25rem;
   overflow: hidden;
   box-shadow: var(--brutal-sm);
   transition: transform .15s, box-shadow .15s;
@@ -281,20 +283,23 @@ body > .bunting-banner:first-child {
 }
 
 .meal-card-info {
-  padding: .65rem .8rem .8rem;
-  background: var(--accent-light);
+  padding: 1rem 1rem 1.1rem;
+  background: #fcf7ad;
   text-align: center;
 }
 
 .meal-date {
-  font-size: .90rem;
-  color: #1e0a3c);
-  margin-bottom: .4rem;
+  font-size: .95rem;
+  color: var(--primary);
+  margin-bottom: .35rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-family: var(--font-pixel);
 }
 
 .meal-name {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 800;
   color: var(--primary);
 }
 
