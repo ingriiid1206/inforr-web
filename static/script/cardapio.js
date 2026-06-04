@@ -4,17 +4,17 @@
 
 // ── ALLERGEN DATA ──────────────────────────────
 const ALLERGENS = {
-  gluten:   { label: "Contém glúten", icon: "gluten.png" },
-  leite:    { label: "Contém leite", icon: "leite.png" },
-  ovo:      { label: "Contém ovo", icon: "ovo.png" },
-  amendoim: { label: "Contém amendoim", icon: "amendoin.png" },
+  gluten:   { label: "Contém glúten", icon: "/static/cardapio/gluten.png" },
+  leite:    { label: "Contém leite", icon: "/static/cardapio/leite.png" },
+  ovo:      { label: "Contém ovo", icon: "/static/cardapio/ovo.png" },
+  amendoim: { label: "Contém amendoim", icon: "/static/cardapio/amendoin.png" },
 };
 
 // ── 3-DAY LUNCH DATA ───────────────────────────
 const REFEICOES = [
-  { dia: "1º dia", data: "16/06", nome: "Panqueca",      img: "panqueca.png" },
-  { dia: "2º dia", data: "17/06", nome: "Torta de Frango", img: "torta.png" },
-  { dia: "3º dia", data: "18/06", nome: "Lasanha",       img: "lasanha.png" },
+  { dia: "1º dia", data: "16/06", nome: "Panqueca",      img: "/static/cardapio/panqueca.png" },
+  { dia: "2º dia", data: "17/06", nome: "Torta de Frango", img: "/static/cardapio/torta.png" },
+  { dia: "3º dia", data: "18/06", nome: "Lasanha",       img: "/static/cardapio/lasanha.png" },
 ];
 
 // ── MENU DATA ──────────────────────────────────
@@ -23,35 +23,35 @@ const MENU = [
   {
     id: 1, nome: "Disco Voador", sub: "Minipizza",
     desc: "Mini pizza assada na hora com molho especial e muçarela derretida.",
-    categoria: "lanches", preco: 6.00, img: "minipizza.png",
+    categoria: "lanches", preco: 6.00, img: "/static/cardapio/minipizza.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Massa","Molho de tomate","Muçarela"],
   },
   {
     id: 3, nome: "Crepe Segundo", sub: "Passou de primeira no sabor",
     desc: "Crepe recheado com presunto e queijo, crocante por fora e cremoso por dentro.",
-    categoria: "lanches", preco: 6.00, img: "crepesalgado.png",
+    categoria: "lanches", preco: 6.00, img: "/static/cardapio/crepesalgado.png",
     alergenicos: ["gluten","leite","ovo"],
     ingredientes: ["Massa de crepe","Presunto","Queijo","Ovos","Leite"],
   },
   {
     id: 4, nome: "Galo Quente", sub: "",
     desc: "Misto quente turbinado com frango desfiado e queijo derretido.",
-    categoria: "lanches", preco: 6.00, img: "galoquente.png",
+    categoria: "lanches", preco: 6.00, img: "/static/cardapio/galoquente.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Pão de forma","Frango desfiado","Queijo"],
   },
   {
     id: 5, nome: "Batata frita", sub: "batata.exe",
     desc: "Quentinha e crocante.",
-    categoria: "lanches", preco: 7.00, img: "batatafrita.png",
+    categoria: "lanches", preco: 7.00, img: "/static/cardapio/batatafrita.png",
     alergenicos: ["gluten"],
     ingredientes: ["batata","sal"],
   },
   {
     id: 6, nome: "Combo de salgados", sub: "Overflow de sabor",
     desc: "Coxinha de frango com catupiry, bolinha de queijo e outros.",
-    categoria: "lanches", preco: 5.00, img: "salgado.png",
+    categoria: "lanches", preco: 5.00, img: "/static/cardapio/salgado.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Massa de coxinha","Frango","Catupiry","Queijo"],
   },
@@ -60,49 +60,49 @@ const MENU = [
   {
     id: 7, nome: "Bolo Junino", sub: "dechcolatw, pede muleke ",
     desc: "Bolo fofinho com 3 opções diferentes.",
-    categoria: "doces", preco: 5.00, img: "bolo.png",
+    categoria: "doces", preco: 5.00, img: "/static/cardapio/bolo.png",
     alergenicos: ["gluten","leite","ovo"],
     ingredientes: ["chocolate","coco","Ovos","Leite condensado","Margarina","Farinha"],
   },
   {
     id: 8, nome: "Paçoca Pointer", sub: "aponta pro sabor",
     desc: "Paçoca caseira feita com amendoim torrado. Simples, direto e delicioso.",
-    categoria: "doces", preco: 3.00, img: "pacoca.png",
+    categoria: "doces", preco: 3.00, img: "/static/cardapio/pacoca.png",
     alergenicos: ["amendoim"],
     ingredientes: ["Amendoim torrado","Açúcar","Sal"],
   },
   {
     id: 9, nome: "Pé-de-Moleque.exe", sub: "rodando no açúcar",
     desc: "Pé-de-moleque crocante feito na hora. Sem dependências, só sabor.",
-    categoria: "doces", preco: 3.00, img: "pedemuleke.png",
+    categoria: "doces", preco: 3.00, img: "/static/cardapio/pedemuleke.png",
     alergenicos: ["amendoim"],
     ingredientes: ["Amendoim","Rapadura","Açúcar"],
   },
   {
     id: 10, nome: "Alfajor", sub: "doce de leite e chocolate",
     desc: " alfajor recheado com doce de leite e coberto com chocolate. Doce de leite: o código-fonte da felicidade.",
-    categoria: "doces", preco: 4.00, img: "Alfajor.png",
+    categoria: "doces", preco: 4.00, img: "/static/cardapio/Alfajor.png",
     alergenicos: ["leite","gluten"],
     ingredientes: ["Biscoito","Doce de leite","Chocolate"],
   },
   {
     id: 11, nome: "Crepe Doce", sub: "morango & chocolate",
     desc: "Crepe doce quentinho recheado com morango, chocolate e leite condensado.",
-    categoria: "doces", preco: 6.00, img: "crepedoce.png",
+    categoria: "doces", preco: 6.00, img: "/static/cardapio/crepedoce.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Massa de crepe","Morango","Chocolate","Leite condensado"],
   },
   {
     id: 12, nome: "Pudim", sub: "clássico da vovó",
     desc: "Pudim cremoso de leite condensado com calda dourada e sabor caseiro.",
-    categoria: "doces", preco: 4.50, img: "pudim.png",
+    categoria: "doces", preco: 4.50, img: "/static/cardapio/pudim.png",
     alergenicos: ["leite","ovo"],
     ingredientes: ["Leite condensado","Leite","Ovos","Açúcar"],
   },
   {
     id: 13, nome: "Cremosim", sub: "doce de colher",
     desc: "Sobremesa cremosa com camadas de creme e calda doce, feita para devorar.",
-    categoria: "doces", preco: 5.00, img: "cremosim.png",
+    categoria: "doces", preco: 5.00, img: "/static/cardapio/cremosim.png",
     alergenicos: ["leite"],
     ingredientes: ["Leite","Açúcar","Amido de milho","Baunilha"],
   },
@@ -110,19 +110,19 @@ const MENU = [
   // BEBIDAS
   {
     id: 14, nome: "Refri (1L)",        sub: "", desc: "",
-    categoria: "bebidas", preco: 6.00, img: "refri1l.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 6.00, img: "/static/cardapio/refri1l.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 15, nome: "Refri (Lata)",      sub: "", desc: "",
-    categoria: "bebidas", preco: 6.00, img: "refrilata.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 6.00, img: "/static/cardapio/refrilata.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 16, nome: "Refri (Garrafinha)", sub: "", desc: "",
-    categoria: "bebidas", preco: 6.00, img: "refrigarrafinha.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 6.00, img: "/static/cardapio/refrigarrafinha.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 17, nome: "Suco",      sub: "", desc: "",
-    categoria: "bebidas", preco: 5.00, img: "suco.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 5.00, img: "/static/cardapio/suco.png", alergenicos: [], ingredientes: [],
   },
 ];
 
