@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inforró - Menu Principal</title>
-    <link rel="stylesheet" href="telainicial.css"> <!-- Arquivo de estilo que criaremos depois -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='telainicial.css') }}">
 </head>
 <body>
 
@@ -13,10 +13,10 @@
         <!-- ================= HEADER JUNINO ================= -->
         <header class="header-junino">
             <!-- Varal de bandeirinhas no topo -->
-            <img src="../../assets/bandeirasroxas.png" alt="Bandeiras Roxas" class="img-bandeiras">
+            <img src="{{ url_for('static', filename='assets/bandeirasroxas.png') }}" alt="Bandeiras Roxas" class="img-bandeiras">
             
             <!-- Fundo de quadradinhos (pixels) atrás da logo -->
-            <img src="../../assets/pixels.png" alt="Pixels Roxos de Fundo" class="img-pixel-fundo">
+            <img src="{{ url_for('static', filename='assets/pixels.png') }}" alt="Pixels Roxos de Fundo" class="img-pixel-fundo">
 
             <!-- Quadradinhos roxos extras de decoração -->
             <div class="header-squares">
@@ -27,17 +27,17 @@
             </div>
             
             <!-- Balão junino na lateral esquerda -->
-            <img src="../../assets/balao.png" alt="Balão Junino Amarelo" class="img-balao">
+            <img src="{{ url_for('static', filename='assets/balao.png') }}" alt="Balão Junino Amarelo" class="img-balao">
             
             <!-- Logotipo central do evento -->
-            <img src="../../assets/inforró.png" alt="Logo Inforró" class="img-logo">
+            <img src="{{ url_for('static', filename='assets/inforró.png') }}" alt="Logo Inforró" class="img-logo">
         </header>
 
         <!-- ================= MENU DE BOTÕES ================= -->
         <nav class="menu-botoes">
             
             <!-- Botão 1: Lan House -->
-            <a href="../../lanhouse/lanhouse.html" class="btn btn-lanhouse">
+            <a href="{{ url_for('lanhouse') }}" class="btn btn-lanhouse">
                 <div class="btn-texto">
                     <span class="btn-titulo">Lan House</span>
                     <span class="btn-subtitulo">Jogos, valores e horarios</span>
@@ -46,7 +46,7 @@
             </a>
 
             <!-- Botão 2: Cardápio -->
-            <a href="../cardapio/cardapio.html" class="btn btn-cardapio">
+            <a href="{{ url_for('cardapio') }}" class="btn btn-cardapio">
                 <div class="btn-texto">
                     <span class="btn-titulo">Cardápio</span>
                     <span class="btn-subtitulo">Comidas, doces e bebidas</span>
