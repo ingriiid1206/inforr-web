@@ -950,6 +950,62 @@ h1, h2, h3 {
   border: 2px solid var(--background);
 }
 
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }
+
+
+/* === Pricing Notice & Specific Price Highlight === */
+.pricing-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: var(--foreground);
+  color: #ffffff;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(59, 15, 92, 0.1);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  animation: fadeSlideUp 0.5s ease-out both;
+}
+
+.pricing-notice:hover {
+  transform: scale(1.02);
+}
+
+.pricing-notice-icon {
+  font-size: 1.35rem;
+  animation: pulse 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
+.modal-price-highlight {
+  border-color: var(--primary) !important;
+  background: hsla(45, 100%, 60%, 0.1) !important;
+  box-shadow: 0 0 12px hsla(45, 100%, 60%, 0.15);
+}
+
+.modal-price-value {
+  color: var(--primary) !important;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.modal-price-detail {
+  font-size: 0.8rem;
+  color: hsla(45, 100%, 97%, 0.6);
+  font-weight: normal;
+  margin-left: 0.35rem;
+}
+
