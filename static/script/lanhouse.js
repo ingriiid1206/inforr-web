@@ -344,7 +344,7 @@ const gameCategories = [
         players: "1",
         description: "Torne-se o Agente 47 e execute contratos ao redor do mundo com maestria.",
         tags: "ação, stealth, campanha, tiro",
-        image: "",
+        image: "/static/images/hitman3.png",
       },
       {
         title: "DOOM 2016",

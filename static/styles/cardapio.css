@@ -1,4 +1,4 @@
-﻿/* ===========================
+/* ===========================
    INFORRÃ“ â€” STYLE.CSS
    =========================== */
 
@@ -270,29 +270,22 @@ body > .bunting-banner:first-child {
   image-rendering: auto;
 }
 
-/* Responsive adjustments for meal cards (forced 3 items per row) */
-@media (max-width: 480px) {
-  .meal-cards-row {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* Responsive: 3 colunas no almoço sempre */
+.meal-cards-row {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @media (max-width: 600px) {
   .meal-cards-row {
-    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+    padding: 0 0.5rem 0.75rem;
   }
-}
-
-@media (min-width: 601px) and (max-width: 768px) {
-  .meal-cards-row {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 769px) {
-  .meal-cards-row {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .meal-name { font-size: 0.72rem; }
+  .meal-date { font-size: 0.65rem; }
+  .meal-card-info { padding: 0.4rem 0.3rem; }
+  .day-badge { font-size: 0.55rem; padding: 0.1rem 0.35rem; }
+  .starburst { width: 110px; height: 110px; }
+  .starburst-price { font-size: 1.6rem; }
 }
 
 .day-badge {
@@ -523,6 +516,20 @@ body > .bunting-banner:first-child {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
   animation: fadeUp .3s ease both;
+}
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+  .card-name { font-size: 0.82rem; }
+  .card-sub { font-size: 0.7rem; margin-bottom: 0.4rem; }
+  .card-body { padding: 0.6rem 0.7rem; }
+  .price-badge { font-size: 0.78rem; padding: 0.25rem 0.5rem; }
+  .allergen-icon-sm { font-size: 1.4rem; padding: 3px 5px; }
+  .card-img { font-size: 2.5rem; }
+  .menu-section { padding: 1.5rem 0.75rem; }
 }
 
 @keyframes fadeUp {
