@@ -56,7 +56,7 @@ const MENU = [
     ingredientes: ["Massa de crepe","Presunto","Queijo","Ovos","Leite"],
   },
   {
-    id: 8, nome: "Batata Frita", sub: "batata.exe",
+    id: 8, nome: "Batatisco Frito", sub: "batata.exe",
     desc: "Quentinha e crocante. O clássico que nunca falha.",
     categoria: "lanches", preco: 5.00, img: "/static/images/batatafrita.png",
     alergenicos: ["gluten"],
@@ -100,7 +100,7 @@ const MENU = [
     ingredientes: ["Amendoim torrado","Açúcar","Sal"],
   },
   {
-    id: 12, nome: "Chikosinn", sub: "",
+    id: 12, nome: "Jacksosim", sub: "",
     desc: "Doce especial da turma. Surpreenda o paladar.",
     categoria: "doces", preco: 2.50, img: "/static/images/cremosim.png",
     alergenicos: ["leite"],
