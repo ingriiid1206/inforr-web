@@ -338,15 +338,6 @@ const gameCategories = [
         image: "/static/images/deadcells.png",
       },
       {
-        title: "Hitman 3",
-        genre: "Ação / Stealth",
-        platform: "Xbox ONE",
-        players: "1",
-        description: "Torne-se o Agente 47 e execute contratos ao redor do mundo com maestria.",
-        tags: "ação, stealth, campanha, tiro",
-        image: "/static/images/hitman3.png",
-      },
-      {
         title: "DOOM 2016",
         genre: "FPS / Ação",
         platform: "PS4",

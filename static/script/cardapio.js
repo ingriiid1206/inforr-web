@@ -57,7 +57,7 @@ const MENU = [
   },
   {
     id: 8, nome: "Batatisco Frito", sub: "batata.exe",
-    desc: "Quentinha e crocante. O clássico que nunca falha.",
+    desc: "O homem é livre para escolher o molho.",
     categoria: "lanches", preco: 5.00, img: "/static/images/batatafrita.png",
     alergenicos: ["gluten"],
     ingredientes: ["Batata","Sal"],
@@ -100,8 +100,8 @@ const MENU = [
     ingredientes: ["Amendoim torrado","Açúcar","Sal"],
   },
   {
-    id: 12, nome: "Jacksosim", sub: "",
-    desc: "Doce especial da turma. Surpreenda o paladar.",
+    id: 12, nome: "Jacksosinn", sub: "",
+    desc: "O ponto de acesso oficial da sua refrescância.",
     categoria: "doces", preco: 2.50, img: "/static/images/cremosim.png",
     alergenicos: ["leite"],
     ingredientes: [],
