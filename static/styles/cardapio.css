@@ -270,22 +270,22 @@ body > .bunting-banner:first-child {
   image-rendering: auto;
 }
 
-/* Responsive adjustments for meal cards */
+/* Responsive adjustments for meal cards (forced 3 items per row) */
 @media (max-width: 480px) {
   .meal-cards-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .meal-cards-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
   .meal-cards-row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -520,7 +520,7 @@ body > .bunting-banner:first-child {
 /* ── PRODUCT CARDS ────────────────────────────── */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
   animation: fadeUp .3s ease both;
 }
@@ -1017,3 +1017,27 @@ body > .bunting-banner:first-child {
   height: 100%;
   object-fit: contain;
 }
+ @ m e d i a   ( m a x - w i d t h :   6 0 0 p x )   { 
+     . c a r d s - g r i d   { 
+         g a p :   0 . 5 r e m ; 
+     } 
+     . m e a l - c a r d s - r o w   { 
+         g a p :   0 . 5 r e m ; 
+         p a d d i n g :   0   0 . 5 r e m   0 . 5 r e m ; 
+     } 
+     . c a r d - n a m e   { 
+         f o n t - s i z e :   0 . 8 r e m ; 
+     } 
+     . p r i c e - b a d g e   { 
+         f o n t - s i z e :   0 . 7 5 r e m ; 
+         p a d d i n g :   0 . 2 r e m   0 . 4 r e m ; 
+     } 
+     . c a r d - b o d y   { 
+         p a d d i n g :   0 . 5 r e m ; 
+     } 
+     . m e a l - n a m e   { 
+         f o n t - s i z e :   0 . 8 r e m ; 
+     } 
+ } 
+  
+ 
