@@ -17,17 +17,16 @@
 <body>
 
     <!-- Bandeirinhas no topo -->
-    <img src="{{ url_for('static', filename='assets/bandeiras.png') }}" alt="Bandeiras Juninas"
-        class="img-bandeiras-topo">
+    <img src="{{ url_for('static', filename='assets/bandeiras.png') }}" alt="Bandeiras Juninas" class="img-bandeiras-topo">
 
     <div class="container">
 
         <!-- Logo principal -->
         <div class="hero-logo-wrap">
-            <img src="{{ url_for('static', filename='assets/inforróincio.png') }}" alt="Logo Inforró" class="img-logo-principal">
+            <img src="{{ url_for('static', filename='assets/inforró.png') }}" alt="Logo Inforró" class="img-logo-principal">
         </div>
 
-        <!-- Tagline estilo terminal (como cardapio.html) -->
+        <!-- Tagline estilo terminal -->
         <p class="terminal-cmd">
             <span class="prompt">&gt;</span>
             <span class="terminal-typing" id="terminal-body"></span>
@@ -37,7 +36,7 @@
         <nav class="menu-botoes">
 
             <!-- Botão 1: Cardápio -->
-            <a href="{{ url_for('cardapio') }}" class="btn btn-cardapio">
+            <a href="{{ url_for('cardapio' ) }}" class="btn btn-cardapio">
                 <span class="btn-icone-wrap icone-cardapio">
                     <img src="{{ url_for('static', filename='assets/cardapio.png') }}" alt="Cardápio" class="btn-icone-img">
                 </span>
@@ -46,7 +45,7 @@
             </a>
 
             <!-- Botão 2: Lan House -->
-            <a href="{{ url_for('lanhouse') }}" class="btn btn-lanhouse">
+            <a href="{{ url_for('lanhouse' ) }}" class="btn btn-lanhouse">
                 <span class="btn-icone-wrap icone-lanhouse">
                     <img src="{{ url_for('static', filename='assets/lanhouse.png') }}" alt="Lan House" class="btn-icone-img">
                 </span>
@@ -58,8 +57,16 @@
 
     </div>
 
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a href="https://www.instagram.com/4.8401.1m?igsh=djY2NzN0czh5enV5" target="_blank" rel="noopener" class="pix-btn">@4.8401.1m</a>
+            <p class="footer-text">Valeu pelo apoio · feito com 💜 pela turma de TI · IFRN</p>
+        </div>
+        <div class="bunting-banner" aria-hidden="true"></div>
+    </footer>
+
+
     <script>
-        // Efeito de digitação no terminal — igual ao cardapio.html
         const text = 'Sabor que conecta_';
         const el = document.getElementById('terminal-body');
         let i = 0;
@@ -68,7 +75,6 @@
                 el.textContent += text[i++];
                 setTimeout(type, 80);
             } else {
-                // pisca o cursor após digitar tudo
                 setTimeout(() => {
                     el.textContent = el.textContent.slice(0, -1);
                     setTimeout(() => {
@@ -79,7 +85,6 @@
             }
         }
         function type2() {
-            // loop: apaga e redigita
             let j = el.textContent.length;
             function erase() {
                 if (j > 0) {
