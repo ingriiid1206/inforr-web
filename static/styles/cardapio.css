@@ -1,5 +1,5 @@
-/* ===========================
-   INFORRÓ — STYLE.CSS
+﻿/* ===========================
+   INFORRÃ“ â€” STYLE.CSS
    =========================== */
 
 :root {
@@ -40,14 +40,14 @@ body {
   color: var(--text);
   font-family: var(--font-body);
   font-size: 1rem;
-  /* Tamanho padrão padrão (16px) */
+  /* Tamanho padrÃ£o padrÃ£o (16px) */
   min-height: 100vh;
-  /* Altura exata da tela visível */
+  /* Altura exata da tela visÃ­vel */
   overflow-x: hidden;
 }
 
 
-/* ── BUNTING ──────────────────────────────────── */
+/* â”€â”€ BUNTING â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .bunting-banner {
   width: 100%;
   height: 130px;
@@ -61,7 +61,7 @@ body > .bunting-banner:first-child {
   margin-bottom: 60px;
 }
 
-/* ── HERO ─────────────────────────────────────── */
+/* â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero {
   text-align: center;
   padding: 0.3rem 1rem 0.3rem;
@@ -102,7 +102,7 @@ body > .bunting-banner:first-child {
   padding: 0;
 }
 
-/* ── ALMOÇO BANNER (purple bar) ──────────────── */
+/* â”€â”€ ALMOÃ‡O BANNER (purple bar) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .almoco-banner {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
   color: #fff;
@@ -151,7 +151,7 @@ body > .bunting-banner:first-child {
   flex-shrink: 0;
 }
 
-/* ── ALMOÇO CARD (3 pratos) ──────────────────── */
+/* â”€â”€ ALMOÃ‡O CARD (3 pratos) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .almoco-section {
   max-width: 900px;
   margin: 5rem auto 2rem;
@@ -365,7 +365,7 @@ body > .bunting-banner:first-child {
   font-size: 3rem;
 }
 
-/* ── LEGEND ───────────────────────────────────── */
+/* â”€â”€ LEGEND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .legend-section {
   max-width: 900px;
   margin: 0 auto 0;
@@ -428,7 +428,7 @@ body > .bunting-banner:first-child {
   color: var(--primary);
 }
 
-/* ── PIXEL LABELS ─────────────────────────────── */
+/* â”€â”€ PIXEL LABELS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .pixel-label {
   font-family: var(--font-pixel);
   font-size: 1.1rem;
@@ -444,7 +444,7 @@ body > .bunting-banner:first-child {
   color: var(--primary-mid);
 }
 
-/* ── TABS ─────────────────────────────────────── */
+/* â”€â”€ TABS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .tabs-bar {
   position: sticky;
   top: 0;
@@ -490,7 +490,7 @@ body > .bunting-banner:first-child {
   box-shadow: var(--brutal-sm);
 }
 
-/* ── MENU SECTION ─────────────────────────────── */
+/* â”€â”€ MENU SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .menu-section {
   max-width: 900px;
   margin: 0 auto;
@@ -517,7 +517,7 @@ body > .bunting-banner:first-child {
   color: var(--primary-mid);
 }
 
-/* ── PRODUCT CARDS ────────────────────────────── */
+/* â”€â”€ PRODUCT CARDS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -616,7 +616,7 @@ body > .bunting-banner:first-child {
   padding: 4px 8px;
 }
 
-/* ── DRINKS LIST ──────────────────────────────── */
+/* â”€â”€ DRINKS LIST â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .drinks-list {
   background: var(--card);
   border: 2px solid var(--primary);
@@ -648,7 +648,7 @@ body > .bunting-banner:first-child {
   color: var(--primary);
 }
 
-/* ── SOBRE ────────────────────────────────────── */
+/* â”€â”€ SOBRE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .sobre-section {
   max-width: 780px;
   margin: 0 auto;
@@ -763,7 +763,7 @@ body > .bunting-banner:first-child {
   padding: .2rem .85rem;
 }
 
-/* ── FOOTER ───────────────────────────────────── */
+/* â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .site-footer {
   border-top: 2px solid var(--primary);
   background: var(--card);
@@ -807,7 +807,7 @@ body > .bunting-banner:first-child {
   font-style: italic;
 }
 
-/* ── MODAL ────────────────────────────────────── */
+/* â”€â”€ MODAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -973,7 +973,7 @@ body > .bunting-banner:first-child {
   color: var(--text);
 }
 
-/* ── RESPONSIVE ───────────────────────────────── */
+/* â”€â”€ RESPONSIVE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 600px) {
   .meal-cards-row {
     grid-template-columns: 1fr;
@@ -998,7 +998,7 @@ body > .bunting-banner:first-child {
 }
 
 
-/* ── BOTÃO VOLTAR ── */
+/* â”€â”€ BOTÃƒO VOLTAR â”€â”€ */
 .back-btn {
   display: inline-flex;
   width: 45px;
@@ -1017,27 +1017,25 @@ body > .bunting-banner:first-child {
   height: 100%;
   object-fit: contain;
 }
- @ m e d i a   ( m a x - w i d t h :   6 0 0 p x )   { 
-     . c a r d s - g r i d   { 
-         g a p :   0 . 5 r e m ; 
-     } 
-     . m e a l - c a r d s - r o w   { 
-         g a p :   0 . 5 r e m ; 
-         p a d d i n g :   0   0 . 5 r e m   0 . 5 r e m ; 
-     } 
-     . c a r d - n a m e   { 
-         f o n t - s i z e :   0 . 8 r e m ; 
-     } 
-     . p r i c e - b a d g e   { 
-         f o n t - s i z e :   0 . 7 5 r e m ; 
-         p a d d i n g :   0 . 2 r e m   0 . 4 r e m ; 
-     } 
-     . c a r d - b o d y   { 
-         p a d d i n g :   0 . 5 r e m ; 
-     } 
-     . m e a l - n a m e   { 
-         f o n t - s i z e :   0 . 8 r e m ; 
-     } 
- } 
-  
- 
+@media (max-width: 600px) {
+  .cards-grid {
+    gap: 0.5rem;
+  }
+  .meal-cards-row {
+    gap: 0.5rem;
+    padding: 0 0.5rem 0.5rem;
+  }
+  .card-name {
+    font-size: 0.8rem;
+  }
+  .price-badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem;
+  }
+  .card-body {
+    padding: 0.5rem;
+  }
+  .meal-name {
+    font-size: 0.8rem;
+  }
+}
