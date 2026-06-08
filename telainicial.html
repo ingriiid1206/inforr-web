@@ -11,23 +11,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=VT323&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='telainicial.css') }}">
+    <link rel="stylesheet" href="telainicial.css">
 </head>
 
 <body>
 
     <!-- Bandeirinhas no topo -->
-    <img src="{{ url_for('static', filename='assets/bandeiras.png') }}" alt="Bandeiras Juninas"
-        class="img-bandeiras-topo">
+    <img src="assets/bandeiras.png" alt="Bandeiras Juninas" class="img-bandeiras-topo">
 
     <div class="container">
 
         <!-- Logo principal -->
         <div class="hero-logo-wrap">
-            <img src="{{ url_for('static', filename='assets/inforróincio.png') }}" alt="Logo Inforró" class="img-logo-principal">
+            <img src="assets/inforróincio.png" alt="Logo Inforró" class="img-logo-principal">
         </div>
 
-        <!-- Tagline estilo terminal (como cardapio.html) -->
+        <!-- Tagline estilo terminal -->
         <p class="terminal-cmd">
             <span class="prompt">&gt;</span>
             <span class="terminal-typing" id="terminal-body"></span>
@@ -37,18 +36,18 @@
         <nav class="menu-botoes">
 
             <!-- Botão 1: Cardápio -->
-            <a href="{{ url_for('cardapio') }}" class="btn btn-cardapio">
+            <a href="Inforró/cardapio/cardapio.html" class="btn btn-cardapio">
                 <span class="btn-icone-wrap icone-cardapio">
-                    <img src="{{ url_for('static', filename='assets/cardapio.png') }}" alt="Cardápio" class="btn-icone-img">
+                    <img src="assets/cardapio.png" alt="Cardápio" class="btn-icone-img">
                 </span>
                 <span class="btn-titulo">Cardápio</span>
                 <span class="btn-seta">›</span>
             </a>
 
             <!-- Botão 2: Lan House -->
-            <a href="{{ url_for('lanhouse') }}" class="btn btn-lanhouse">
+            <a href="lanhouse/lanhouse.html" class="btn btn-lanhouse">
                 <span class="btn-icone-wrap icone-lanhouse">
-                    <img src="{{ url_for('static', filename='assets/lanhouse.png') }}" alt="Lan House" class="btn-icone-img">
+                    <img src="assets/lanhouse.png" alt="Lan House" class="btn-icone-img">
                 </span>
                 <span class="btn-titulo">Lan House</span>
                 <span class="btn-seta">›</span>
@@ -59,7 +58,6 @@
     </div>
 
     <script>
-        // Efeito de digitação no terminal — igual ao cardapio.html
         const text = 'Sabor que conecta_';
         const el = document.getElementById('terminal-body');
         let i = 0;
@@ -68,7 +66,6 @@
                 el.textContent += text[i++];
                 setTimeout(type, 80);
             } else {
-                // pisca o cursor após digitar tudo
                 setTimeout(() => {
                     el.textContent = el.textContent.slice(0, -1);
                     setTimeout(() => {
@@ -79,7 +76,6 @@
             }
         }
         function type2() {
-            // loop: apaga e redigita
             let j = el.textContent.length;
             function erase() {
                 if (j > 0) {
