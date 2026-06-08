@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inforró - Menu Principal</title>
-    <meta name="description" content="Inforró – Arraiá Geek do IFRN. Acesse o cardápio e a lan house." />
+    <meta name="description" content="Inforró – ArraiásódoBom do IFRN. Acesse o cardápio e a lan house." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=VT323&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/telainicial.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/telainicial.css') }}">
 </head>
 
 <body>
 
     <!-- Bandeirinhas no topo -->
-    <img src="{{ url_for('static', filename='assets/bandeiras.png') }}" alt="Bandeiras Juninas" class="img-bandeiras-topo">
+    <img src="{{ url_for('static', filename='images/bandeiras.png') }}" alt="Bandeiras Juninas" class="img-bandeiras-topo">
 
     <div class="container">
 
         <!-- Logo principal -->
         <div class="hero-logo-wrap">
-            <img src="{{ url_for('static', filename='assets/inforró.png') }}" alt="Logo Inforró" class="img-logo-principal">
+            <img src="{{ url_for('static', filename='images/inforróinicio.png') }}" alt="Logo Inforró" class="img-logo-principal">
         </div>
 
         <!-- Tagline estilo terminal -->
@@ -38,7 +38,7 @@
             <!-- Botão 1: Cardápio -->
             <a href="{{ url_for('cardapio' ) }}" class="btn btn-cardapio">
                 <span class="btn-icone-wrap icone-cardapio">
-                    <img src="{{ url_for('static', filename='assets/cardapio.png') }}" alt="Cardápio" class="btn-icone-img">
+                    <img src="{{ url_for('static', filename='images/cardapio.png') }}" alt="Cardápio" class="btn-icone-img">
                 </span>
                 <span class="btn-titulo">Cardápio</span>
                 <span class="btn-seta">›</span>
@@ -47,7 +47,7 @@
             <!-- Botão 2: Lan House -->
             <a href="{{ url_for('lanhouse' ) }}" class="btn btn-lanhouse">
                 <span class="btn-icone-wrap icone-lanhouse">
-                    <img src="{{ url_for('static', filename='assets/lanhouse.png') }}" alt="Lan House" class="btn-icone-img">
+                    <img src="{{ url_for('static', filename='images/lanhouse.png') }}" alt="Lan House" class="btn-icone-img">
                 </span>
                 <span class="btn-titulo">Lan House</span>
                 <span class="btn-seta">›</span>
@@ -60,7 +60,7 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <a href="https://www.instagram.com/4.8401.1m?igsh=djY2NzN0czh5enV5" target="_blank" rel="noopener" class="pix-btn">@4.8401.1m</a>
-            <p class="footer-text">Valeu pelo apoio · feito com 💜 pela turma de TI · IFRN</p>
+            <p class="footer-text">Valeu pelo apoio · feito com 💜 pel4 ano de informatica · IFRN</p>
         </div>
         <div class="bunting-banner" aria-hidden="true"></div>
     </footer>
