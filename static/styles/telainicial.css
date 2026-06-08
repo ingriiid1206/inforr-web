@@ -201,7 +201,7 @@ body {
 .bunting-banner {
     width: 100%;
     height: 130px;
-    background-image: url("/static/assets/bandeiras.png");
+    background-image: url("/static/images/bandeiras.png");
     background-repeat: repeat-x;
     background-position: top left;
     background-size: 400px auto;
