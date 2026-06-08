@@ -239,6 +239,42 @@ body > .bunting-banner:first-child {
   padding: 0 1.25rem 1.25rem;
 }
 
+@media (max-width: 600px) {
+  .almoco-section {
+    margin: 1.5rem auto 1rem;
+    padding: 0 0.75rem;
+  }
+  .almoco-card-header {
+    padding: 1rem 1rem 0.75rem;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .almoco-card-title {
+    font-size: 1.6rem;
+  }
+  .almoco-card-sub {
+    font-size: 0.78rem;
+    display: none;
+  }
+  .starburst {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+  }
+  .starburst-top { font-size: 0.65rem; }
+  .starburst-price { font-size: 1.1rem; }
+  .meal-cards-row {
+    gap: 0.4rem;
+    padding: 0 0.5rem 0.75rem;
+  }
+  .meal-card-info { padding: 0.4rem 0.3rem; }
+  .meal-date { font-size: 0.65rem; }
+  .meal-name { font-size: 0.72rem; }
+  .day-badge { font-size: 0.55rem; padding: 0.1rem 0.35rem; }
+  .accomp-plus { font-size: 1.5rem; }
+  .accomp-pill { font-size: 0.78rem; padding: 0.2rem 0.6rem; }
+}
+
 .meal-card {
   background: var(--card);
   border: 2px solid var(--primary);
@@ -268,24 +304,6 @@ body > .bunting-banner:first-child {
   height: 80%;
   object-fit: contain;
   image-rendering: auto;
-}
-
-/* Responsive: 3 colunas no almoço sempre */
-.meal-cards-row {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-@media (max-width: 600px) {
-  .meal-cards-row {
-    gap: 0.4rem;
-    padding: 0 0.5rem 0.75rem;
-  }
-  .meal-name { font-size: 0.72rem; }
-  .meal-date { font-size: 0.65rem; }
-  .meal-card-info { padding: 0.4rem 0.3rem; }
-  .day-badge { font-size: 0.55rem; padding: 0.1rem 0.35rem; }
-  .starburst { width: 110px; height: 110px; }
-  .starburst-price { font-size: 1.6rem; }
 }
 
 .day-badge {
