@@ -13,14 +13,18 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='/styles/cardapio.css') }}" />
 </head>
 <body>
-
   <!-- Bunting top -->
   <div class="bunting-banner" aria-hidden="true"></div>
+
+  <!-- Botão Voltar (Abaixo das bandeiras) -->
+  <a href="javascript:history.back()" style="position: absolute; top: 140px; left: 20px; z-index: 9999; width: 35px; height: 35px; display: block;">
+    <img src="/static/images/voltar.png" alt="Voltar" style="width: 100%; height: 100%; object-fit: contain;">
+  </a>
 
   <!-- ── HERO ──────────────────────────────── -->
   <section class="hero">
     <p class="terminal-cmd"><span class="prompt">&gt;</span> ./inforro --start</p>
-    <img src="/static/assets/inforró.png" alt="Inforró" class="hero-logo" />
+    <img src="/static/images/inforró.png" alt="Inforró" class="hero-logo" />
     <p class="terminal-typing" id="terminal-body"></p>
   </section>
 

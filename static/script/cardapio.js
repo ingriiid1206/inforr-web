@@ -4,17 +4,17 @@
 
 // ── ALLERGEN DATA ──────────────────────────────
 const ALLERGENS = {
-  gluten:   { label: "Contém glúten", icon: "/static/cardapio/gluten.png" },
-  leite:    { label: "Contém leite", icon: "/static/cardapio/leite.png" },
-  ovo:      { label: "Contém ovo", icon: "/static/cardapio/ovo.png" },
-  amendoim: { label: "Contém amendoim", icon: "/static/cardapio/amendoin.png" },
+  gluten:   { label: "Contém glúten", icon: "/static/images/gluten.png" },
+  leite:    { label: "Contém leite", icon: "/static/images/leite.png" },
+  ovo:      { label: "Contém ovo", icon: "/static/images/ovo.png" },
+  amendoim: { label: "Contém amendoim", icon: "/static/images/amendoin.png" },
 };
 
 // ── 3-DAY LUNCH DATA ───────────────────────────
 const REFEICOES = [
-  { dia: "1º dia", data: "16/06", nome: "Panqueca",      img: "/static/cardapio/panqueca.png" },
-  { dia: "2º dia", data: "17/06", nome: "Torta de Frango", img: "/static/cardapio/torta.png" },
-  { dia: "3º dia", data: "18/06", nome: "Lasanha",       img: "/static/cardapio/lasanha.png" },
+  { dia: "1º dia", data: "16/06", nome: "Panqueca",      img: "/static/images/panqueca.png" },
+  { dia: "2º dia", data: "17/06", nome: "Torta de Frango", img: "/static/images/torta.png" },
+  { dia: "3º dia", data: "18/06", nome: "Lasanha",       img: "/static/images/lasanha.png" },
 ];
 
 // ── MENU DATA ──────────────────────────────────
@@ -23,49 +23,49 @@ const MENU = [
   {
     id: 1, nome: "Jeffim", sub: "O pudim da galera! Cremoso, dourado e com nota dez em concordância com o seu apetite.",
     desc: "O pudim da galera! Cremoso, dourado e com nota dez em concordância com o seu apetite.",
-    categoria: "doces", preco: 4.50, img: "/static/cardapio/pudim.png",
+    categoria: "doces", preco: 4.50, img: "/static/images/pudim.png",
     alergenicos: ["leite","ovo"],
     ingredientes: ["Leite condensado","Leite","Ovos","Açúcar"],
   },
   {
     id: 3, nome: "Crepião", sub: "Crepe recheado com chocolate derretido. Quente, doce e recheado. Três qualidades em perfeita coordenação.",
     desc: "Crepe recheado com chocolate derretido. Quente, doce e recheado. Três qualidades em perfeita coordenação.",
-    categoria: "doces", preco: 4.50, img: "/static/cardapio/crepedoce.png",
+    categoria: "doces", preco: 4.50, img: "/static/images/crepedoce.png",
     alergenicos: ["gluten","leite","ovo"],
     ingredientes: ["Massa de crepe","Chocolate","Leite condensado"],
   },
   {
     id: 5, nome: "Disco Voador", sub: "Molho especial e muçarela derretida na velocidade da luz.",
     desc: "Molho especial e muçarela derretida na velocidade da luz.",
-    categoria: "lanches", preco: 5.00, img: "/static/cardapio/minipizza.png",
+    categoria: "lanches", preco: 5.00, img: "/static/images/minipizza.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Massa","Molho de tomate","Muçarela"],
   },
   {
     id: 6, nome: "Galo-quente", sub: "",
     desc: "Misto quente turbinado com frango desfiado e queijo derretido. Tá pegando fogo!",
-    categoria: "lanches", preco: 5.00, img: "/static/cardapio/galoquente.png",
+    categoria: "lanches", preco: 5.00, img: "/static/images/galoquente.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Pão de forma","Frango desfiado","Queijo"],
   },
   {
     id: 7, nome: "Crepe Segundo", sub: "Passou direto no sabor",
     desc: "Crepe recheado com presunto e queijo, passou direto no sabor.",
-    categoria: "lanches", preco: 4.50, img: "/static/cardapio/crepesalgado.png",
+    categoria: "lanches", preco: 4.50, img: "/static/images/crepesalgado.png",
     alergenicos: ["gluten","leite","ovo"],
     ingredientes: ["Massa de crepe","Presunto","Queijo","Ovos","Leite"],
   },
   {
     id: 8, nome: "Batata Frita", sub: "batata.exe",
     desc: "Quentinha e crocante. O clássico que nunca falha.",
-    categoria: "lanches", preco: 5.00, img: "/static/cardapio/batatafrita.png",
+    categoria: "lanches", preco: 5.00, img: "/static/images/batatafrita.png",
     alergenicos: ["gluten"],
     ingredientes: ["Batata","Sal"],
   },
   {
     id: 9, nome: "Sarahlgados", sub: "Combo da Sarah: Tão gostoso que vai entrar para os livros de História.",
     desc: "Combo da Sarah: Tão gostoso que vai entrar para os livros de História.",
-    categoria: "lanches", preco: 5.00, img: "/static/cardapio/salgado.png",
+    categoria: "lanches", preco: 5.00, img: "/static/images/salgado.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Massa de coxinha","Frango","Catupiry","Queijo"],
   },
@@ -74,42 +74,42 @@ const MENU = [
   {
     id: 2, nome: "Boloberto", sub: "Bolo caprichado em três sabores: pé de moleque, cenoura e chocolate. Uma reação em cadeia de sabor que vai acelerar suas papilas.",
     desc: "Bolo caprichado em três sabores: pé de moleque, cenoura e chocolate. Uma reação em cadeia de sabor que vai acelerar suas papilas.",
-    categoria: "doces", preco: 4.50, img: "/static/cardapio/bolo.png",
+    categoria: "doces", preco: 4.50, img: "/static/images/bolo.png",
     alergenicos: ["gluten","leite","ovo","amendoim"],
     ingredientes: ["Farinha","Ovos","Leite","Açúcar","Cenoura","Chocolate","Amendoim"],
   },
   {
     id: 4, nome: "Alfalysson", sub: "O alfajor que formata o seu mau humor e reinicia o seu dia.",
     desc: "O alfajor que formata o seu mau humor e reinicia o seu dia.",
-    categoria: "doces", preco: 4.00, img: "/static/cardapio/alfajor.png",
+    categoria: "doces", preco: 4.00, img: "/static/images/alfajor.png",
     alergenicos: ["leite","gluten"],
     ingredientes: ["Biscoito","Doce de leite","Chocolate"],
   },
   {
     id: 10, nome: "Sabritaliana", sub: "Tradicional doce de chocolate com pedacinhos crocantes de biscoito. The best doce de chocolate com o croc perfeito.",
     desc: "Tradicional doce de chocolate com pedacinhos crocantes de biscoito. The best doce de chocolate com o croc perfeito.",
-    categoria: "doces", preco: 4.00, img: "/static/cardapio/palha.png",
+    categoria: "doces", preco: 4.00, img: "/static/images/palha.png",
     alergenicos: ["leite","gluten"],
     ingredientes: ["Chocolate","Biscoito","Leite condensado","Manteiga"],
   },
   {
     id: 11, nome: "Paçochica", sub: "Paçoca sabor de amendoim torrado para deixar o seu dia muy bueno.",
     desc: "Paçoca sabor de amendoim torrado para deixar o seu dia muy bueno.",
-    categoria: "doces", preco: 0.50, img: "/static/cardapio/pacoca.png",
+    categoria: "doces", preco: 0.50, img: "/static/images/pacoca.png",
     alergenicos: ["amendoim"],
     ingredientes: ["Amendoim torrado","Açúcar","Sal"],
   },
   {
     id: 12, nome: "Chikosinn", sub: "",
     desc: "Doce especial da turma. Surpreenda o paladar.",
-    categoria: "doces", preco: 2.50, img: "/static/cardapio/cremosim.png",
+    categoria: "doces", preco: 2.50, img: "/static/images/cremosim.png",
     alergenicos: ["leite"],
     ingredientes: [],
   },
   {
     id: 13, nome: "Moleque Ney", sub: "Pé-de-moleque crocante. Sabor elevado à máxima potência",
     desc: "Pé-de-moleque crocante. Sabor elevado à máxima potência",
-    categoria: "doces", preco: 1.50, img: "/static/cardapio/pedemuleke.png",
+    categoria: "doces", preco: 1.50, img: "/static/images/pedemuleke.png",
     alergenicos: ["amendoim"],
     ingredientes: ["Amendoim","Rapadura","Açúcar"],
   },
@@ -117,19 +117,19 @@ const MENU = [
   // BEBIDAS
   {
     id: 14, nome: "Refri (1L)", sub: "", desc: "",
-    categoria: "bebidas", preco: 10.00, img: "/static/cardapio/refri1L.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 10.00, img: "/static/images/refri1L.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 15, nome: "Refri (Lata)", sub: "", desc: "",
-    categoria: "bebidas", preco: 5.00, img: "/static/cardapio/refrilata.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 5.00, img: "/static/images/refrilata.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 16, nome: "Suco Natural", sub: "", desc: "",
-    categoria: "bebidas", preco: 3.50, img: "/static/cardapio/suco.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 3.50, img: "/static/images/suco.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 17, nome: "Água Mineral", sub: "", desc: "",
-    categoria: "bebidas", preco: 3.00, img: "/static/cardapio/refrigarrafinha.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 3.00, img: "/static/images/refrigarrafinha.png", alergenicos: [], ingredientes: [],
   },
 ];
 

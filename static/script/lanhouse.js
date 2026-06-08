@@ -7,19 +7,19 @@ const carouselSlides = [
   {
     label: "BEM-VINDO À INFORRÔ",
     value: "A melhor LAN house do Bloco 2!",
-    image: "",
+    image: "/static/images/vem ai.png",
     type: "info",
   },
   {
     label: "FIQUE POR DENTRO",
     value: "Promoções e novidades toda semana",
-    image: "",
+    image: "/static/images/vem ai.png",
     type: "info",
   },
   {
     label: "TOURNAMENTS",
-    value: "Participe dos campeonatos de CS, FIFA e Luta!",
-    image: "",
+    value: "Participe dos campeonatos!",
+    image: "/static/images/vem ai.png",
     type: "info",
   },
 ];
@@ -36,7 +36,7 @@ const gameCategories = [
         players: "1-4",
         description: "Lutas rápidas de plataforma com dezenas de personagens épicos.",
         tags: "luta, plataforma, multiplayer",
-        image: "/static/assets/jogos/brawlhalla.png",
+        image: "/static/images/brawlhalla.png",
       },
       {
         title: "Cuphead",
@@ -45,7 +45,7 @@ const gameCategories = [
         players: "1-2",
         description: "Ação clássica com chefões difíceis e arte retrô inspirada nos anos 30.",
         tags: "ação, run and gun, cooperativo",
-        image: "/static/assets/jogos/cuphead.png",
+        image: "/static/images/cuphead.png",
       },
       {
         title: "Gang Beasts",
@@ -54,7 +54,7 @@ const gameCategories = [
         players: "2-4",
         description: "Combates caóticos e hilários com personagens gelatinosos.",
         tags: "party game, luta, multiplayer, comédia",
-        image: "/static/assets/jogos/gangbeasts.png",
+        image: "/static/images/gangbeasts.png",
       },
       {
         title: "It Takes Two",
@@ -63,7 +63,7 @@ const gameCategories = [
         players: "2",
         description: "Uma jornada cooperativa emocionante vencedora do Jogo do Ano.",
         tags: "aventura, cooperativo, campanha",
-        image: "/static/assets/jogos/ittakestwo.png",
+        image: "/static/images/ittakestwo.png",
       },
       {
         title: "Overcooked! 2",
@@ -72,7 +72,7 @@ const gameCategories = [
         players: "1-4",
         description: "Caos na cozinha! Prepare pratos correndo contra o tempo.",
         tags: "party game, cooperativo, simulação",
-        image: "/static/assets/jogos/overcooked2.png",
+        image: "/static/images/overcooked2.png",
       },
       {
         title: "Stick Fight: The Game",
@@ -81,7 +81,7 @@ const gameCategories = [
         players: "2-4",
         description: "Luta frenética de bonecos palito com física engraçada.",
         tags: "ação, party game, luta, multiplayer",
-        image: "/static/assets/jogos/stickfigth.png",
+        image: "/static/images/stickfigth.png",
       },
       {
         title: "Totally Accurate Battle Simulator (TABS)",
@@ -90,7 +90,7 @@ const gameCategories = [
         players: "1-2",
         description: "Batalhas divertidas com física ragdoll absurda.",
         tags: "estratégia, simulação, comédia",
-        image: "/static/assets/jogos/totallyacuratebattlesimulator.png",
+        image: "/static/images/totallyacuratebattlesimulator.png",
       },
       {
         title: "Towerfall Ascension",
@@ -99,7 +99,7 @@ const gameCategories = [
         players: "2-4",
         description: "Combate de arco e flecha rápido e divertido para jogar com amigos.",
         tags: "ação, party game, multiplayer",
-        image: "/static/assets/jogos/towerfallascension.png",
+        image: "/static/images/towerfallascension.png",
       },
       {
         title: "Tricky Towers",
@@ -108,7 +108,7 @@ const gameCategories = [
         players: "2-4",
         description: "Construa sua torre de blocos com física e magias para atrapalhar.",
         tags: "puzzle, party game, multiplayer",
-        image: "/static/assets/jogos/trickytowers.png",
+        image: "/static/images/trickytowers.png",
       },
       {
         title: "Ultimate Chicken Horse",
@@ -117,7 +117,7 @@ const gameCategories = [
         players: "2-4",
         description: "Crie armadilhas para atrapalhar seus amigos enquanto tenta vencer a fase.",
         tags: "party game, plataforma, multiplayer, criativo",
-        image: "/static/assets/jogos/ultimatechickenhorse.png",
+        image: "/static/images/ultimatechickenhorse.png",
       },
     ],
   },
@@ -131,7 +131,7 @@ const gameCategories = [
         players: "1-4+",
         description: "Combates militares intensos e ação em equipe.",
         tags: "fps, ação, tiro, multiplayer",
-        image: "/static/assets/jogos/callofduty.png",
+        image: "/static/images/callofduty.png",
       },
       {
         title: "Minecraft",
@@ -154,7 +154,7 @@ const gameCategories = [
         players: "1-2",
         description: "O clássico mod brasileiro de futebol 100% atualizado. Emulado no PS2.",
         tags: "futebol, esporte, emulado",
-        image: "/static/assets/jogos/bombapatch.png",
+        image: "/static/images/bombapatch.png",
       },
       {
         title: "FIFA 18",
@@ -199,7 +199,7 @@ const gameCategories = [
         players: "1-2",
         description: "Corridas de rua velozes e customização extrema de carros.",
         tags: "corrida, arcade, velocidade, customização",
-        image: "/static/assets/jogos/needforspeed.png",
+        image: "/static/images/needforspeed.png",
       },
       {
         title: "Rocket League",
@@ -222,7 +222,7 @@ const gameCategories = [
         players: "1-2",
         description: "Lutas clássicas e rápidas em arenas abertas 3D com personagens do DBZ.",
         tags: "luta, anime, dragon ball, 3d",
-        image: "/static/assets/jogos/dragonballzsparkingmeteor.png",
+        image: "/static/images/dragonballzsparkingmeteor.png",
       },
       {
         title: "Injustice 2",
@@ -231,7 +231,7 @@ const gameCategories = [
         players: "1-2",
         description: "Batalhas épicas entre heróis e vilões do universo DC.",
         tags: "luta, heróis, dc comics",
-        image: "/static/assets/jogos/injustice2.png",
+        image: "/static/images/injustice2.png",
       },
       {
         title: "MK11",
@@ -240,7 +240,7 @@ const gameCategories = [
         players: "1-2",
         description: "Combate brutal e sangrento com fatalities impressionantes.",
         tags: "luta, violência, fatalities",
-        image: "/static/assets/jogos/mortalkombat.png",
+        image: "/static/images/mortalkombat.png",
       },
       {
         title: "Naruto Shippuden: Ultimate Ninja Storm (do 1 ao 4)",
@@ -249,7 +249,7 @@ const gameCategories = [
         players: "1-2",
         description: "Reviva a história clássica do ninja Naruto com jutsus espetaculares.",
         tags: "luta, anime, ninja",
-        image: "/static/assets/jogos/narutostorm.png",
+        image: "/static/images/narutostorm.png",
       },
       {
         title: "The King of Fighters",
@@ -258,7 +258,7 @@ const gameCategories = [
         players: "1-2",
         description: "O clássico combate 2D de trios de lutadores lendários.",
         tags: "luta, arcade, 2d",
-        image: "/static/assets/jogos/thekingoffighters.png",
+        image: "/static/images/thekingoffighters.png",
       },
     ],
   },
@@ -272,7 +272,7 @@ const gameCategories = [
         players: "1",
         description: "Sobreviva cinco noites monitorando animatrônicos perigosos.",
         tags: "terror, sobrevivência, suspense",
-        image: "/static/assets/jogos/fivenigthsatfreddys.png",
+        image: "/static/images/fivenigthsatfreddys.png",
       },
       {
         title: "Nightmare Creatures",
@@ -281,7 +281,7 @@ const gameCategories = [
         players: "1",
         description: "Um clássico sombrio de terror gótico com monstros assustadores.",
         tags: "terror, ação, clássico",
-        image: "/static/assets/jogos/nigthmarecreatures.png",
+        image: "/static/images/nigthmarecreatures.png",
       },
       {
         title: "Red Dead Redemption 2 (RDR2)",
@@ -290,7 +290,7 @@ const gameCategories = [
         players: "1",
         description: "Uma obra-prima sobre a vida de foras da lei no Velho Oeste.",
         tags: "mundo aberto, aventura, faroeste, campanha",
-        image: "/static/assets/jogos/reddeadredemptionII.png",
+        image: "/static/images/reddeadredemptionII.png",
       },
       {
         title: "TLOU 1",
@@ -299,7 +299,7 @@ const gameCategories = [
         players: "1",
         description: "Uma jornada emocionante pela sobrevivência em um mundo pós-apocalíptico.",
         tags: "aventura, drama, sobrevivência, campanha",
-        image: "/static/assets/jogos/thelastofus.png",
+        image: "/static/images/thelastofus.png",
       },
       {
         title: "TLOU 2",
@@ -308,7 +308,7 @@ const gameCategories = [
         players: "1",
         description: "A emocionante continuação da história de Ellie.",
         tags: "aventura, drama, sobrevivência, campanha",
-        image: "/static/assets/jogos/thelastofus.png",
+        image: "/static/images/thelastofus.png",
       },
       {
         title: "GTA SA",
@@ -317,7 +317,7 @@ const gameCategories = [
         players: "1",
         description: "O lendário clássico do PS2 com Carl Johnson no estado de San Andreas.",
         tags: "mundo aberto, ação, crime, campanha",
-        image: "/static/assets/jogos/gtaSA.png",
+        image: "/static/images/gtaSA.png",
       },
       {
         title: "GTA V",
@@ -326,7 +326,7 @@ const gameCategories = [
         players: "1",
         description: "Ação caótica em Los Santos com três protagonistas inesquecíveis.",
         tags: "mundo aberto, ação, crime, online",
-        image: "/static/assets/jogos/gtaV.png",
+        image: "/static/images/gtaV.png",
       },
       {
         title: "Dead Cells",
@@ -335,7 +335,7 @@ const gameCategories = [
         players: "1",
         description: "Ação rápida onde a morte é apenas o recomeço da jornada.",
         tags: "roguelike, metroidvania, ação, plataforma",
-        image: "/static/assets/jogos/deadcells.png",
+        image: "/static/images/deadcells.png",
       },
       {
         title: "Hitman 3",
@@ -353,7 +353,7 @@ const gameCategories = [
         players: "1",
         description: "Destruição rápida de demônios no inferno ao som de heavy metal.",
         tags: "fps, ação, tiro, campanha",
-        image: "/static/assets/jogos/doom.png",
+        image: "/static/images/doom.png",
       },
     ],
   },

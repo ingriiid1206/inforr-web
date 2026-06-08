@@ -51,7 +51,7 @@ body {
 .bunting-banner {
   width: 100%;
   height: 130px;
-  background-image: url("/static/assets/bandeiras.png");
+  background-image: url("/static/images/bandeiras.png");
   background-repeat: repeat-x;
   background-position: top left;
   background-size: 400px auto;
@@ -203,7 +203,7 @@ body > .bunting-banner:first-child {
   justify-content: center;
   text-align: center;
 
-  background-image: url("estrela.png");
+  background-image: url("/static/images/estrela.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -267,7 +267,32 @@ body > .bunting-banner:first-child {
   width: 80%;
   height: 80%;
   object-fit: contain;
-  image-rendering: pixelated;
+  image-rendering: auto;
+}
+
+/* Responsive adjustments for meal cards */
+@media (max-width: 480px) {
+  .meal-cards-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .meal-cards-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .meal-cards-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .meal-cards-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .day-badge {
@@ -972,8 +997,23 @@ body > .bunting-banner:first-child {
   }
 }
 
-@media (max-width: 768px) {
-  .meal-cards-row {
-    grid-template-columns: repeat(3, 1fr);
-  }
+
+/* ── BOTÃO VOLTAR ── */
+.back-btn {
+  display: inline-flex;
+  width: 45px;
+  height: 45px;
+  transition: transform 0.2s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-btn:hover {
+  transform: scale(1.1);
+}
+
+.back-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
