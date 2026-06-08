@@ -1,4 +1,8 @@
-/* ================= CONFIGURAÇÕES GERAIS ================= */
+/* ===================================================
+   TELA INICIAL — Inforró
+   Estética: Space Grotesk + VT323, creme, roxo e amarelo
+   =================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,287 +10,211 @@
 }
 
 body {
-    background-color: #FDFBF2; /* Cor de fundo amarela-creme */
-    font-family: 'Courier New', Courier, monospace; /* Fonte estilo pixel art padrão */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #FDFBF2;
+    font-family: 'Space Grotesk', sans-serif;
     min-height: 100vh;
-    padding: 20px;
-}
-
-.container {
-    width: min(100%, 700px);
-    padding: 24px 18px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
 }
 
-/* Faça o layout ocupar toda a largura em telas maiores, mas com limite confortável */
-@media (min-width: 900px) {
-    body {
-        align-items: flex-start;
-        padding: 40px;
-    }
-
-    .container {
-        width: min(100%, 680px);
-        padding: 36px 32px;
-    }
-}
-
-/* ================= HEADER E ASSETS JUNINOS ================= */
-.header-junino {
+/* ── Bandeiras no topo ── */
+.img-bandeiras-topo {
     width: 100%;
-    height: 300px;
-    position: relative;
+    max-width: 340px;
+    display: block;
+    margin: 0 auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* ── Container central ── */
+.container {
+    width: 100%;
+    max-width: 380px;
+    padding: 0px 20px 40px;
+    margin-top: -6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+/* ── Logo principal ── */
+.hero-logo-wrap {
+    width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 7px;
+}
+
+.img-logo-principal {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ── Terminal typing tagline ── */
+.terminal-cmd {
+    font-family: 'VT323', monospace;
+    font-size: 1.3rem;
+    color: #6d28d9;
+    margin-bottom: 67px;
+    display: flex;
     align-items: center;
-    margin-bottom: 24px;
-    overflow: hidden;
+    gap: 6px;
+    line-height: 1;
 }
 
-.header-junino::before,
-.header-junino::after {
-    content: '';
-    position: absolute;
-    width: 38px;
-    height: 38px;
-    background: rgba(182, 145, 228, 0.85);
-    border-radius: 8px;
-    z-index: 2;
+.prompt {
+    color: #eab308;
+    margin-right: 0.4em;
 }
 
-.header-junino::before {
-    left: 12%;
-    top: 25%;
+.terminal-typing {
+    font-family: 'VT323', monospace;
+    font-size: 1.3rem;
+    color: #6d28d9;
+    min-height: 1.2em;
+    line-height: 1;
 }
 
-.header-junino::after {
-    right: 10%;
-    top: 30%;
-}
-
-.header-squares {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    pointer-events: none;
-}
-
-.header-squares .square {
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    background: rgba(182, 145, 228, 0.9);
-    border-radius: 10px;
-}
-
-.header-squares .square-1 {
-    left: 16%;
-    top: 20%;
-}
-
-.header-squares .square-2 {
-    left: 35%;
-    top: 14%;
-}
-
-.header-squares .square-3 {
-    right: 22%;
-    top: 22%;
-}
-
-.header-squares .square-4 {
-    right: 12%;
-    top: 40%;
-}
-
-/* Varal de bandeirinhas no topo absoluto */
-.img-bandeiras {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 420px;
-    z-index: 3;
-}
-
-/* Grid de pixels flutuando ao fundo */
-.img-pixel-fundo {
-    position: absolute;
-    top: 32px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 420px;
-    z-index: 1;
-    opacity: 0.95;
-}
-
-/* Balão junino na lateral esquerda */
-.img-balao {
-    position: absolute;
-    left: 10px;
-    top: calc(50% - 40px);
-    width: 70px;
-    z-index: 4;
-}
-
-/* Logo principal centralizada */
-.img-logo {
-    position: absolute;
-    left: 50%;
-    top: calc(50% - 53px);
-    transform: translate(-50%, -50%);
-    z-index: 5;
-    width: 280px;
-}
-
-@media (min-width: 900px) {
-    .header-junino {
-        height: 380px;
-    }
-
-    .img-bandeiras {
-        max-width: 520px;
-    }
-
-    .img-pixel-fundo {
-        max-width: 460px;
-    }
-
-    .img-logo {
-        width: 320px;
-    }
-
-    .header-junino::before {
-        left: 10%;
-        top: 22%;
-        width: 44px;
-        height: 44px;
-    }
-
-    .header-junino::after {
-        right: 8%;
-        top: 28%;
-        width: 42px;
-        height: 42px;
-    }
-}
-
-/* ================= BOTÕES DO MENU ================= */
+/* ── Botões do menu ── */
 .menu-botoes {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Espaço entre os botões reduzido */
-    align-items: center;
+    gap: 14px;
 }
 
-/* Estilo base compartilhado de ambos os botões */
 .btn {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: min(100%, 480px);
-    padding: 12px 18px;
-    border-radius: 28px;
+    gap: 14px;
+    width: 100%;
+    padding: 12px 16px;
+    background: #ffffff;
+    border-radius: 18px;
     text-decoration: none;
     transition: transform 0.18s ease, box-shadow 0.18s ease;
-    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.12);
-    min-height: 56px;
-}
-
-@media (min-width: 900px) {
-    .btn {
-        width: min(100%, 540px);
-        padding: 14px 22px;
-        min-height: 60px;
-    }
+    border: 2px solid transparent;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 0 rgba(0, 0, 0, 0.14);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(66, 0, 99, 0.12);
 }
 
-.btn-texto {
+/* Borda lilás — Cardápio */
+.btn-cardapio {
+    border-color: #c9b8f0;
+}
+
+/* Borda amarela — Lan House */
+.btn-lanhouse {
+    border-color: #f5d742;
+}
+
+/* ── Círculo do ícone ── */
+.btn-icone-wrap {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    flex: 1;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
-/* Títulos principais em estilo pixelado */
+.icone-cardapio {
+    background: #e8d8ff;
+}
+
+.icone-lanhouse {
+    background: #fdf0a0;
+}
+
+/* PNG dentro do círculo */
+.btn-icone-img {
+    width: 68%;
+    height: 68%;
+    object-fit: contain;
+    display: block;
+}
+
+/* ── Texto do botão ── */
 .btn-titulo {
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
+    flex: 1;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d0045;
+    letter-spacing: 0.2px;
 }
 
-/* Subtítulos menores */
-.btn-subtitulo {
-    font-size: 11px;
-    margin-top: 4px;
-}
-
-/* Ícone da seta preta */
 .btn-seta {
-    font-size: 24px;
-    color: #000000;
-    font-weight: bold;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    padding: 0 6px;
-    border-radius: 0;
-    background: transparent;
+    font-size: 1.6rem;
+    color: #888;
+    font-weight: 400;
+    line-height: 1;
 }
 
-.btn-lanhouse {
-    background-color: #420063; /* Roxo escuro */
-}
-.btn-lanhouse .btn-titulo {
-    color: #FFFFFF; /* Texto principal branco */
-}
-.btn-lanhouse .btn-subtitulo {
-    color: #E0C8FF; /* Subtítulo lilás claro */
+/* ── Responsivo ── */
+@media (max-width: 360px) {
+    .img-bandeiras-topo {
+        max-width: 90%;
+    }
+
+    .container {
+        padding: 6px 14px 30px;
+    }
+
+    .img-logo-principal {
+        max-width: 240px;
+    }
+
+    .btn-titulo {
+        font-size: 0.95rem;
+    }
 }
 
-.btn-cardapio {
-    background-color: #FFDF52; /* Amarelo junino */
-}
-.btn-cardapio .btn-titulo,
-.btn-cardapio .btn-subtitulo {
-    color: #420063; /* Todos os textos em roxo escuro */
+@media (min-width: 500px) {
+    .img-bandeiras-topo {
+        max-width: 390px;
+    }
+
+    .container {
+        max-width: 440px;
+        padding: 10px 28px 48px;
+    }
+
+    .img-logo-principal {
+        max-width: 340px;
+    }
+
+    .btn {
+        padding: 14px 20px;
+    }
+
+    .btn-titulo {
+        font-size: 1.05rem;
+    }
+
+    .btn-icone-wrap {
+        width: 50px;
+        height: 50px;
+    }
 }
 
-/* --- Cores específicas do Botão Lan House --- */
-.btn-lanhouse {
-    background-color: #420063; /* Roxo escuro */
-}
-.btn-lanhouse .btn-titulo {
-    color: #FFFFFF; /* Texto principal branco */
-}
-.btn-lanhouse .btn-subtitulo {
-    color: #D7BAED; /* Subtítulo lilás claro */
-}
+@media (min-width: 768px) {
+    .img-bandeiras-topo {
+        max-width: 460px;
+    }
 
-/* --- Cores específicas do Botão Cardápio --- */
-.btn-cardapio {
-    background-color: #FFDF52; /* Amarelo junino */
-}
-.btn-cardapio .btn-titulo, 
-.btn-cardapio .btn-subtitulo {
-    color: #420063; /* Todos os textos em roxo escuro */
+    .container {
+        max-width: 480px;
+    }
 }

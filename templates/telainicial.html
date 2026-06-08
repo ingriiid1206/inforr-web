@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inforró - Menu Principal</title>
+    <meta name="description" content="Inforró – Arraiá Geek do IFRN. Acesse o cardápio e a lan house." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=VT323&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="{{ url_for('static', filename='telainicial.css') }}">
 </head>
+
 <body>
 
-    <div class="container">
-        
-        <!-- ================= HEADER JUNINO ================= -->
-        <header class="header-junino">
-            <!-- Varal de bandeirinhas no topo -->
-            <img src="{{ url_for('static', filename='assets/bandeirasroxas.png') }}" alt="Bandeiras Roxas" class="img-bandeiras">
-            
-            <!-- Fundo de quadradinhos (pixels) atrás da logo -->
-            <img src="{{ url_for('static', filename='assets/pixels.png') }}" alt="Pixels Roxos de Fundo" class="img-pixel-fundo">
+    <!-- Bandeirinhas no topo -->
+    <img src="{{ url_for('static', filename='assets/bandeiras.png') }}" alt="Bandeiras Juninas"
+        class="img-bandeiras-topo">
 
-            <!-- Quadradinhos roxos extras de decoração -->
-            <div class="header-squares">
-                <span class="square square-1"></span>
-                <span class="square square-2"></span>
-                <span class="square square-3"></span>
-                <span class="square square-4"></span>
-            </div>
-            
-            <!-- Balão junino na lateral esquerda -->
-            <img src="{{ url_for('static', filename='assets/balao.png') }}" alt="Balão Junino Amarelo" class="img-balao">
-            
-            <!-- Logotipo central do evento -->
-            <img src="{{ url_for('static', filename='assets/inforró.png') }}" alt="Logo Inforró" class="img-logo">
-        </header>
+    <div class="container">
+
+        <!-- Logo principal -->
+        <div class="hero-logo-wrap">
+            <img src="{{ url_for('static', filename='assets/inforróincio.png') }}" alt="Logo Inforró" class="img-logo-principal">
+        </div>
+
+        <!-- Tagline estilo terminal (como cardapio.html) -->
+        <p class="terminal-cmd">
+            <span class="prompt">&gt;</span>
+            <span class="terminal-typing" id="terminal-body"></span>
+        </p>
 
         <!-- ================= MENU DE BOTÕES ================= -->
         <nav class="menu-botoes">
-            
-            <!-- Botão 1: Lan House -->
-            <a href="{{ url_for('lanhouse') }}" class="btn btn-lanhouse">
-                <div class="btn-texto">
-                    <span class="btn-titulo">Lan House</span>
-                    <span class="btn-subtitulo">Jogos, valores e horarios</span>
-                </div>
-                <span class="btn-seta">&rarr;</span>
+
+            <!-- Botão 1: Cardápio -->
+            <a href="{{ url_for('cardapio') }}" class="btn btn-cardapio">
+                <span class="btn-icone-wrap icone-cardapio">
+                    <img src="{{ url_for('static', filename='assets/cardapio.png') }}" alt="Cardápio" class="btn-icone-img">
+                </span>
+                <span class="btn-titulo">Cardápio</span>
+                <span class="btn-seta">›</span>
             </a>
 
-            <!-- Botão 2: Cardápio -->
-            <a href="{{ url_for('cardapio') }}" class="btn btn-cardapio">
-                <div class="btn-texto">
-                    <span class="btn-titulo">Cardápio</span>
-                    <span class="btn-subtitulo">Comidas, doces e bebidas</span>
-                </div>
-                <span class="btn-seta">&rarr;</span>
+            <!-- Botão 2: Lan House -->
+            <a href="{{ url_for('lanhouse') }}" class="btn btn-lanhouse">
+                <span class="btn-icone-wrap icone-lanhouse">
+                    <img src="{{ url_for('static', filename='assets/lanhouse.png') }}" alt="Lan House" class="btn-icone-img">
+                </span>
+                <span class="btn-titulo">Lan House</span>
+                <span class="btn-seta">›</span>
             </a>
 
         </nav>
 
     </div>
 
+    <script>
+        // Efeito de digitação no terminal — igual ao cardapio.html
+        const text = 'Sabor que conecta_';
+        const el = document.getElementById('terminal-body');
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                el.textContent += text[i++];
+                setTimeout(type, 80);
+            } else {
+                // pisca o cursor após digitar tudo
+                setTimeout(() => {
+                    el.textContent = el.textContent.slice(0, -1);
+                    setTimeout(() => {
+                        el.textContent += '_';
+                        setTimeout(type2, 600);
+                    }, 400);
+                }, 1200);
+            }
+        }
+        function type2() {
+            // loop: apaga e redigita
+            let j = el.textContent.length;
+            function erase() {
+                if (j > 0) {
+                    el.textContent = el.textContent.slice(0, --j);
+                    setTimeout(erase, 40);
+                } else {
+                    i = 0;
+                    setTimeout(type, 500);
+                }
+            }
+            erase();
+        }
+        window.addEventListener('load', () => setTimeout(type, 600));
+    </script>
+
 </body>
+
 </html>
