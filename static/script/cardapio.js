@@ -100,7 +100,7 @@ const MENU = [
     ingredientes: ["Amendoim torrado","Açúcar","Sal"],
   },
   {
-    id: 12, nome: "Jacksosinn", sub: "",
+    id: 12, nome: "Jacksosinn", sub: "O ponto de acesso oficial da sua refrescância.",
     desc: "O ponto de acesso oficial da sua refrescância.",
     categoria: "doces", preco: 2.50, img: "/static/images/cremosim.png",
     alergenicos: ["leite"],
