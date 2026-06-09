@@ -72,8 +72,8 @@ const MENU = [
 
   // DOCES
   {
-    id: 2, nome: "Boloberto", sub: "Bolo caprichado em três sabores: pé de moleque, cenoura e chocolate. Uma reação em cadeia de sabor que vai acelerar suas papilas.",
-    desc: "Bolo caprichado em três sabores: pé de moleque, cenoura e chocolate. Uma reação em cadeia de sabor que vai acelerar suas papilas.",
+    id: 2, nome: "Boloberto", sub: "Três bolos caprichados nos sabores pé de moleque, cenoura e chocolate. Uma reação em cadeia de sabores que vai acelerar suas papilas gustativas.",
+    desc: "Três bolos caprichados nos sabores pé de moleque, cenoura e chocolate. Uma reação em cadeia de sabores que vai acelerar suas papilas gustativas.",
     categoria: "doces", preco: 4.50, img: "/static/images/bolo.png",
     alergenicos: ["gluten","leite","ovo","amendoim"],
     ingredientes: ["Farinha","Ovos","Leite","Açúcar","Cenoura","Chocolate","Amendoim"],
@@ -104,7 +104,7 @@ const MENU = [
     desc: "O ponto de acesso oficial da sua refrescância.",
     categoria: "doces", preco: 2.50, img: "/static/images/cremosim.png",
     alergenicos: ["leite"],
-    ingredientes: [],
+    ingredientes: ["cremosinho"],
   },
   {
     id: 13, nome: "Moleque Ney", sub: "Pé-de-moleque crocante. Sabor elevado à máxima potência",
