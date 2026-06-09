@@ -140,7 +140,7 @@ const gameCategories = [
         players: "1-4+",
         description: "Crie, explore e sobreviva em um mundo pixelado infinito.",
         tags: "sandbox, aventura, sobrevivência, criativo, multiplayer",
-        image: "",
+        image: "/static/images/minecraft.png",
       },
     ],
   },
@@ -163,7 +163,7 @@ const gameCategories = [
         players: "1-4",
         description: "Clássico simulador de futebol da EA Sports.",
         tags: "futebol, esporte, simulação, multiplayer",
-        image: "",
+        image: "/static/images/fifa18.png",
       },
       {
         title: "FIFA 19",
@@ -172,7 +172,7 @@ const gameCategories = [
         players: "1-4",
         description: "Clássico simulador de futebol da EA Sports.",
         tags: "futebol, esporte, simulação, multiplayer",
-        image: "",
+        image: "/static/images/fifa19.png",
       },
       {
         title: "FIFA 20",
@@ -181,7 +181,7 @@ const gameCategories = [
         players: "1-4",
         description: "Clássico simulador de futebol da EA Sports.",
         tags: "futebol, esporte, simulação, multiplayer",
-        image: "",
+        image: "/static/images/fifa20.png",
       },
       {
         title: "FC25",
@@ -190,7 +190,7 @@ const gameCategories = [
         players: "1-4",
         description: "O mais recente simulador de futebol da EA Sports.",
         tags: "futebol, esporte, simulação, multiplayer",
-        image: "",
+        image: "/static/images/fifa25.png",
       },
       {
         title: "Need for Speed",
@@ -208,7 +208,7 @@ const gameCategories = [
         players: "1-4",
         description: "Futebol caótico usando carros turbinados com física incrível.",
         tags: "futebol, carros, multiplayer, esporte",
-        image: "",
+        image: "/static/images/rocketleague.png",
       },
     ],
   },
