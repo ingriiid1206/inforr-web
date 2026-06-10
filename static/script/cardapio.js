@@ -21,25 +21,32 @@ const REFEICOES = [
 const MENU = [
   // LANCHES
   {
-    id: 1, nome: "Jeffim", sub: "O pudim da galera! Cremoso, dourado e com nota dez em concordância com o seu apetite.",
-    desc: "O pudim da galera! Cremoso, dourado e com nota dez em concordância com o seu apetite.",
-    categoria: "doces", preco: 4.50, img: "/static/images/pudim.png",
-    alergenicos: ["leite","ovo"],
-    ingredientes: ["Leite condensado","Leite","Ovos","Açúcar"],
+    id: 1, nome: "Jeffimousse", sub: "Jedfimousse: o adjetivo perfeito para o substantivo sabor, nos modos limão e morango.",
+    desc: "Jedfimousse: o adjetivo perfeito para o substantivo sabor, nos modos limão e morango.",
+    categoria: "doces", preco: 4.00, img: "/static/images/mousse.png",
+    alergenicos: ["leite"],
+    ingredientes: ["creme de leite","Leite condensado","Limão","morango"],
   },
   {
-    id: 3, nome: "Crepião", sub: "Crepe recheado com chocolate derretido. Quente, doce e recheado. Três qualidades em perfeita coordenação.",
+    id: 2, nome: "Boloberto", sub: "Três bolos caprichados nos sabores pé de moleque, cenoura e chocolate. Uma reação em cadeia de sabores que vai acelerar suas papilas gustativas.",
+    desc: "Três bolos caprichados nos sabores pé de moleque, cenoura e chocolate. Uma reação em cadeia de sabores que vai acelerar suas papilas gustativas.",
+    categoria: "doces", preco: 4.50, img: "/static/images/bolo.png",
+    alergenicos: ["gluten","leite","ovo","amendoim"],
+    ingredientes: ["Farinha","Ovos","Leite","Açúcar","Cenoura","Chocolate","Amendoim"],
+  },
+  {
+    id: 3, nome: "Crepioca", sub: "Crepe recheado com chocolate derretido. Quente, doce e recheado. Três qualidades em perfeita coordenação.",
     desc: "Crepe recheado com chocolate derretido. Quente, doce e recheado. Três qualidades em perfeita coordenação.",
     categoria: "doces", preco: 4.50, img: "/static/images/crepedoce.png",
     alergenicos: ["gluten","leite","ovo"],
-    ingredientes: ["Massa de crepe","Chocolate","Leite condensado"],
+    ingredientes: ["Massa de crepe","Chocolate BATOM"],
   },
   {
     id: 5, nome: "Disco Voador", sub: "Molho especial e muçarela derretida na velocidade da luz.",
     desc: "Molho especial e muçarela derretida na velocidade da luz.",
     categoria: "lanches", preco: 5.00, img: "/static/images/minipizza.png",
     alergenicos: ["gluten","leite"],
-    ingredientes: ["Massa","Molho de tomate","Muçarela"],
+    ingredientes: ["Massa","presunto","Molho de tomate","Muçarela"],
   },
   {
     id: 6, nome: "Galo-quente", sub: "",
@@ -49,8 +56,8 @@ const MENU = [
     ingredientes: ["Pão de forma","Frango desfiado","Queijo"],
   },
   {
-    id: 7, nome: "Crepe Segundo", sub: "Passou direto no sabor",
-    desc: "Crepe recheado com presunto e queijo, passou direto no sabor.",
+    id: 7, nome: "Secrepe", sub: "Tão gostoso que vai fazer seu suco gástrico trabalhar sorrindo!",
+    desc: "Tão gostoso que vai fazer seu suco gástrico trabalhar sorrindo!",
     categoria: "lanches", preco: 4.50, img: "/static/images/crepesalgado.png",
     alergenicos: ["gluten","leite","ovo"],
     ingredientes: ["Massa de crepe","Presunto","Queijo","Ovos","Leite"],
