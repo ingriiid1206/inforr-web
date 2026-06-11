@@ -23,7 +23,7 @@ const MENU = [
   {
     id: 1, nome: "Jeffimousse", sub: "Jedfimousse: o adjetivo perfeito para o substantivo sabor, nos modos limão e morango.",
     desc: "Jedfimousse: o adjetivo perfeito para o substantivo sabor, nos modos limão e morango.",
-    categoria: "doces", preco: 4.00, img: "/static/images/mousse.png",
+    categoria: "doces", preco: 4.00, img: "/static/images/mousse.jpg",
     alergenicos: ["leite"],
     ingredientes: ["creme de leite","Leite condensado","Limão","morango"],
   },
@@ -78,13 +78,6 @@ const MENU = [
   },
 
   // DOCES
-  {
-    id: 2, nome: "Boloberto", sub: "Três bolos caprichados nos sabores pé de moleque, cenoura e chocolate. Uma reação em cadeia de sabores que vai acelerar suas papilas gustativas.",
-    desc: "Três bolos caprichados nos sabores pé de moleque, cenoura e chocolate. Uma reação em cadeia de sabores que vai acelerar suas papilas gustativas.",
-    categoria: "doces", preco: 4.50, img: "/static/images/bolo.png",
-    alergenicos: ["gluten","leite","ovo","amendoim"],
-    ingredientes: ["Farinha","Ovos","Leite","Açúcar","Cenoura","Chocolate","Amendoim"],
-  },
   {
     id: 4, nome: "Alfalysson", sub: "O alfajor que formata o seu mau humor e reinicia o seu dia.",
     desc: "O alfajor que formata o seu mau humor e reinicia o seu dia.",

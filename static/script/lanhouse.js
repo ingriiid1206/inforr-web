@@ -13,7 +13,7 @@ const carouselSlides = [
   {
     label: "Torneio de Overcooked 2",
     value: "As inscrições estão abertas!",
-    image: "/static/images/torneioovercooked2.png",
+    image: "/static/images/torneioovercooked.png",
     type: "info",
   },
 
