@@ -49,8 +49,8 @@ const MENU = [
     ingredientes: ["Massa","presunto","Molho de tomate","Muçarela"],
   },
   {
-    id: 6, nome: "Galo do Maia", sub: "",
-    desc: "Misto quente turbinado com frango desfiado e queijo derretido. Tá pegando fogo!",
+    id: 6, nome: "Galo do Maia", sub: "Uma mistura homogênea de sabor que ativa suas endorfinas!",
+    desc: "Uma mistura homogênea de sabor que ativa suas endorfinas!",
     categoria: "lanches", preco: 5.00, img: "/static/images/galoquente.png",
     alergenicos: ["gluten","leite"],
     ingredientes: ["Pão de forma","Frango desfiado","Queijo"],
