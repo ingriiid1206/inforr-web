@@ -5,23 +5,25 @@
 // === DADOS DO CARROSSEL ===
 const carouselSlides = [
   {
-    label: "BEM-VINDO À INFORRÔ",
-    value: "A melhor LAN house do Bloco 2!",
-    image: "/static/images/vem ai.png",
+    label: "Torneio de Bomba Patch",
+    value: "As inscrições estão abertas!",
+    image: "/static/images/torneiobombapatch.png",
     type: "info",
   },
   {
-    label: "FIQUE POR DENTRO",
-    value: "Promoções e novidades toda semana",
-    image: "/static/images/vem ai.png",
+    label: "Torneio de Overcooked 2",
+    value: "As inscrições estão abertas!",
+    image: "/static/images/torneioovercooked2.png",
     type: "info",
   },
+
   {
-    label: "TOURNAMENTS",
-    value: "Participe dos campeonatos!",
-    image: "/static/images/vem ai.png",
+    label: "Torneio de Brawlhalla",
+    value: "As inscrições estão abertas!",
+    image: "/static/images/torneiobrawlhalla.png",
     type: "info",
   },
+ 
 ];
 
 // === DADOS DOS JOGOS ===
