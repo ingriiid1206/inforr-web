@@ -23,7 +23,7 @@ const MENU = [
   {
     id: 1, nome: "Jeffimousse", sub: "Jedfimousse: o adjetivo perfeito para o substantivo sabor, nos modos limão e morango.",
     desc: "Jedfimousse: o adjetivo perfeito para o substantivo sabor, nos modos limão e morango.",
-    categoria: "doces", preco: 4.00, img: "/static/images/mousse.jpg",
+    categoria: "doces", preco: 4.00, img: "/static/images/mousse.png",
     alergenicos: ["leite"],
     ingredientes: ["creme de leite","Leite condensado","Limão","morango"],
   },
