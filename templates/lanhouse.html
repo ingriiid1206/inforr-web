@@ -5,10 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>INFORRÔ • LAN House</title>
   <meta name="description" content="Cardápio de jogos e preços da Inforrô LAN House. Bloco 2, Sala 10." />
-  <link rel="icon" href="../assets/inforró.png" type="image/png" />
-  <link rel="stylesheet" href="/static/lanhouse.css" />
+  <link rel="icon" href="{{ url_for('static', filename='images/inforro.png') }}" type="image/png" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/lanhouse.css') }}" />
 </head>
 <body>
+
+  <!-- Botão Voltar -->
+  <a href="{{ url_for('index') }}" style="position: absolute; top: 20px; left: 20px; z-index: 9999; width: 35px; height: 35px; display: block;">
+    <img src="{{ url_for('static', filename='images/voltar.png') }}" alt="Voltar" style="width: 100%; height: 100%; object-fit: contain;">
+  </a>
+
 
   <main class="main-container">
     <div class="content-wrapper">
@@ -18,7 +24,7 @@
         <div class="header-game-area">
           <canvas id="header-canvas"></canvas>
           <div class="logo-container" id="logo-container">
-            <img src="/static/assets/inforró.png" alt="Inforró" class="logo-img" id="logo-img">
+            <img src="{{ url_for('static', filename='images/inforro.png') }}" alt="Inforró" class="logo-img" id="logo-img">
           </div>
         </div>
         <p class="font-pixel subtitle">BLOCO 2 • SALA 10</p>
@@ -53,6 +59,26 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- ========== REGRAS DA LAN HOUSE ========== -->
+      <section class="section rules-section">
+        <h2 class="font-pixel section-title section-title-bordered">REGRAS DA LAN HOUSE</h2>
+        <div class="rules-container">
+          <ul class="rules-list">
+            <li>
+              <span class="rule-icon">🚫</span>
+              <span class="rule-text">Não é permitida a entrada nem o consumo de alimentos e bebidas no local.</span>
+            </li>
+            <li>
+              <span class="rule-icon">🎮</span>
+              <span class="rule-text">Fique à vontade para trazer e usar o seu próprio controle, mouse ou teclado.</span>
+            </li>
+            <li>
+              <span class="rule-icon">⏱️</span>
+              <span class="rule-text">Tempo de Jogo: É permitido usar no máximo 2 tickets por sessão (plays de 10 ou 15 minutos).</span>
+            </li>
+          </ul>
         </div>
       </section>
 

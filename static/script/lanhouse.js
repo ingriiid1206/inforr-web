@@ -5,23 +5,25 @@
 // === DADOS DO CARROSSEL ===
 const carouselSlides = [
   {
-    label: "BEM-VINDO À INFORRÔ",
-    value: "A melhor LAN house do Bloco 2!",
-    image: "",
+    label: "Torneio de Bomba Patch",
+    value: "As inscrições estão abertas!",
+    image: "/static/images/torneiobombapatch.png",
     type: "info",
   },
   {
-    label: "FIQUE POR DENTRO",
-    value: "Promoções e novidades toda semana",
-    image: "",
+    label: "Torneio de Overcooked 2",
+    value: "As inscrições estão abertas!",
+    image: "/static/images/torneioovercooked.png",
     type: "info",
   },
+
   {
-    label: "TOURNAMENTS",
-    value: "Participe dos campeonatos de CS, FIFA e Luta!",
-    image: "",
+    label: "Torneio de Brawlhalla",
+    value: "As inscrições estão abertas!",
+    image: "/static/images/torneiobrawlhalla.png",
     type: "info",
   },
+ 
 ];
 
 // === DADOS DOS JOGOS ===
@@ -36,7 +38,7 @@ const gameCategories = [
         players: "1-4",
         description: "Lutas rápidas de plataforma com dezenas de personagens épicos.",
         tags: "luta, plataforma, multiplayer",
-        image: "brawlhalla.png",
+        image: "/static/images/brawlhalla.png",
       },
       {
         title: "Cuphead",
@@ -45,7 +47,7 @@ const gameCategories = [
         players: "1-2",
         description: "Ação clássica com chefões difíceis e arte retrô inspirada nos anos 30.",
         tags: "ação, run and gun, cooperativo",
-        image: "cuphead.png",
+        image: "/static/images/cuphead.png",
       },
       {
         title: "Gang Beasts",
@@ -54,7 +56,7 @@ const gameCategories = [
         players: "2-4",
         description: "Combates caóticos e hilários com personagens gelatinosos.",
         tags: "party game, luta, multiplayer, comédia",
-        image: "gang-beasts.png",
+        image: "/static/images/gangbeasts.png",
       },
       {
         title: "It Takes Two",
@@ -63,7 +65,7 @@ const gameCategories = [
         players: "2",
         description: "Uma jornada cooperativa emocionante vencedora do Jogo do Ano.",
         tags: "aventura, cooperativo, campanha",
-        image: "it-takes-two.png",
+        image: "/static/images/ittakestwo.png",
       },
       {
         title: "Overcooked! 2",
@@ -72,7 +74,7 @@ const gameCategories = [
         players: "1-4",
         description: "Caos na cozinha! Prepare pratos correndo contra o tempo.",
         tags: "party game, cooperativo, simulação",
-        image: "overcooked2.png",
+        image: "/static/images/overcooked2.png",
       },
       {
         title: "God of War",
@@ -90,7 +92,7 @@ const gameCategories = [
         players: "2-4",
         description: "Luta frenética de bonecos palito com física engraçada.",
         tags: "ação, party game, luta, multiplayer",
-        image: "stick-fight.png",
+        image: "/static/images/stickfigth.png",
       },
       {
         title: "Totally Accurate Battle Simulator (TABS)",
@@ -99,16 +101,16 @@ const gameCategories = [
         players: "1-2",
         description: "Batalhas divertidas com física ragdoll absurda.",
         tags: "estratégia, simulação, comédia",
-        image: "tabs.png",
+        image: "/static/images/totallyacuratebattlesimulator.png",
       },
       {
-        title: "TowerFall Ascension",
+        title: "Towerfall Ascension",
         genre: "Ação / Party Game",
         platform: "PC/Notebook",
         players: "2-4",
         description: "Combate de arco e flecha rápido e divertido para jogar com amigos.",
         tags: "ação, party game, multiplayer",
-        image: "towerfall.png",
+        image: "/static/images/towerfallascension.png",
       },
       {
         title: "Tricky Towers",
@@ -117,7 +119,7 @@ const gameCategories = [
         players: "2-4",
         description: "Construa sua torre de blocos com física e magias para atrapalhar.",
         tags: "puzzle, party game, multiplayer",
-        image: "tricky-towers.png",
+        image: "/static/images/trickytowers.png",
       },
       {
         title: "Ultimate Chicken Horse",
@@ -126,22 +128,13 @@ const gameCategories = [
         players: "2-4",
         description: "Crie armadilhas para atrapalhar seus amigos enquanto tenta vencer a fase.",
         tags: "party game, plataforma, multiplayer, criativo",
-        image: "ultimate-chicken-horse.png",
+        image: "/static/images/ultimatechickenhorse.png",
       },
     ],
   },
   {
-    title: "MULTIPLAYER & AÇÃO ESPORTES",
+    title: "MULTIPLAYER & AÇÃO",
     games: [
-      {
-        title: "Counter-Strike: Global Offensive (CS:GO)",
-        genre: "FPS Tático",
-        platform: "PC/Notebook",
-        players: "1-10",
-        description: "O clássico jogo de tiro tático com equipes rivais.",
-        tags: "fps, tático, tiro, multiplayer competitivo",
-        image: "csgo.png",
-      },
       {
         title: "Call of Duty",
         genre: "FPS / Ação",
@@ -149,16 +142,7 @@ const gameCategories = [
         players: "1-4+",
         description: "Combates militares intensos e ação em equipe.",
         tags: "fps, ação, tiro, multiplayer",
-        image: "call-of-duty.png",
-      },
-      {
-        title: "Fortnite",
-        genre: "Battle Royale",
-        platform: "PC/Notebook",
-        players: "1-4+",
-        description: "Sobreviva e construa em batalhas frenéticas contra 100 jogadores.",
-        tags: "battle royale, ação, multiplayer, construção",
-        image: "fortnite.png",
+        image: "/static/images/callofduty.png",
       },
       {
         title: "Minecraft",
@@ -167,16 +151,7 @@ const gameCategories = [
         players: "1-4+",
         description: "Crie, explore e sobreviva em um mundo pixelado infinito.",
         tags: "sandbox, aventura, sobrevivência, criativo, multiplayer",
-        image: "minecraft.png",
-      },
-      {
-        title: "DOOM (2016 e Eternal)",
-        genre: "FPS / Ação",
-        platform: "PS4 e PC/Notebook",
-        players: "1",
-        description: "Destruição rápida de demônios no inferno ao som de heavy metal.",
-        tags: "fps, ação, tiro, campanha",
-        image: "doom.png",
+        image: "/static/images/minecraft.png",
       },
     ],
   },
@@ -190,48 +165,75 @@ const gameCategories = [
         players: "1-2",
         description: "O clássico mod brasileiro de futebol 100% atualizado. Emulado no PS2.",
         tags: "futebol, esporte, emulado",
-        image: "bomba-patch.png",
+        image: "/static/images/bombapatch.png",
       },
       {
-        title: "FIFA (FIFA 18, 19, 20, FC25 e FC26)",
+        title: "FIFA 18",
         genre: "Esportes / Futebol",
-        platform: "PC/Notebook e Xbox ONE",
+        platform: "Xbox ONE",
         players: "1-4",
-        description: "O principal simulador de futebol do mundo com elencos atualizados.",
+        description: "Clássico simulador de futebol da EA Sports.",
         tags: "futebol, esporte, simulação, multiplayer",
-        image: "fifa.png",
+        image: "/static/images/fifa18.png",
+      },
+      {
+        title: "FIFA 19",
+        genre: "Esportes / Futebol",
+        platform: "Xbox ONE",
+        players: "1-4",
+        description: "Clássico simulador de futebol da EA Sports.",
+        tags: "futebol, esporte, simulação, multiplayer",
+        image: "/static/images/fifa19.png",
+      },
+      {
+        title: "FIFA 20",
+        genre: "Esportes / Futebol",
+        platform: "Xbox ONE",
+        players: "1-4",
+        description: "Clássico simulador de futebol da EA Sports.",
+        tags: "futebol, esporte, simulação, multiplayer",
+        image: "/static/images/fifa20.png",
+      },
+      {
+        title: "FC25",
+        genre: "Esportes / Futebol",
+        platform: "Xbox ONE",
+        players: "1-4",
+        description: "O mais recente simulador de futebol da EA Sports.",
+        tags: "futebol, esporte, simulação, multiplayer",
+        image: "/static/images/fifa25.png",
       },
       {
         title: "Need for Speed",
         genre: "Corrida Arcade",
-        platform: "PC/Notebook",
+        platform: "PS2",
         players: "1-2",
         description: "Corridas de rua velozes e customização extrema de carros.",
         tags: "corrida, arcade, velocidade, customização",
-        image: "need-for-speed.png",
+        image: "/static/images/needforspeed.png",
+      },
+      {
+        title: "Rocket League",
+        genre: "Esportes / Ação",
+        platform: "Xbox ONE",
+        players: "1-4",
+        description: "Futebol caótico usando carros turbinados com física incrível.",
+        tags: "futebol, carros, multiplayer, esporte",
+        image: "/static/images/rocketleague.png",
       },
     ],
   },
   {
-    title: "CAMPANHA, LUTA & TERROR",
+    title: "LUTA & ANIME",
     games: [
       {
-        title: "Five Nights at Freddy's (FNAF)",
-        genre: "Terror / Sobrevivência",
-        platform: "PC/Notebook",
-        players: "1",
-        description: "Sobreviva cinco noites monitorando animatrônicos perigosos.",
-        tags: "terror, sobrevivência, suspense",
-        image: "fnaf.png",
-      },
-      {
-        title: "Nightmare Creatures",
-        genre: "Terror / Ação",
-        platform: "PC/Notebook",
-        players: "1",
-        description: "Um clássico sombrio de terror gótico com monstros assustadores.",
-        tags: "terror, ação, clássico",
-        image: "nightmare-creatures.png",
+        title: "Dragon Ball Z: Budokai Tenkaichi 3",
+        genre: "Luta 3D",
+        platform: "PS2",
+        players: "1-2",
+        description: "Lutas clássicas e rápidas em arenas abertas 3D com personagens do DBZ.",
+        tags: "luta, anime, dragon ball, 3d",
+        image: "/static/images/dragonballzsparkingmeteor.png",
       },
       {
         title: "Injustice 2",
@@ -240,7 +242,7 @@ const gameCategories = [
         players: "1-2",
         description: "Batalhas épicas entre heróis e vilões do universo DC.",
         tags: "luta, heróis, dc comics",
-        image: "injustice2.png",
+        image: "/static/images/injustice2.png",
       },
       {
         title: "MK11",
@@ -249,25 +251,16 @@ const gameCategories = [
         players: "1-2",
         description: "Combate brutal e sangrento com fatalities impressionantes.",
         tags: "luta, violência, fatalities",
-        image: "mk11.png",
+        image: "/static/images/mortalkombat.png",
       },
       {
-        title: "Naruto Shippuden: Ultimate Ninja Storm",
+        title: "Naruto Shippuden: Ultimate Ninja Storm (do 1 ao 4)",
         genre: "Luta / Anime",
         platform: "PC/Notebook",
         players: "1-2",
         description: "Reviva a história clássica do ninja Naruto com jutsus espetaculares.",
         tags: "luta, anime, ninja",
-        image: "naruto-storm.png",
-      },
-      {
-        title: "Red Dead Redemption 2 (RDR2)",
-        genre: "Mundo Aberto / Aventura",
-        platform: "PC/Notebook e PS4",
-        players: "1",
-        description: "Uma obra-prima sobre a vida de foras da lei no Velho Oeste.",
-        tags: "mundo aberto, aventura, faroeste, campanha",
-        image: "rdr2.png",
+        image: "/static/images/narutostorm.png",
       },
       {
         title: "The King of Fighters",
@@ -276,34 +269,75 @@ const gameCategories = [
         players: "1-2",
         description: "O clássico combate 2D de trios de lutadores lendários.",
         tags: "luta, arcade, 2d",
-        image: "kof.png",
+        image: "/static/images/thekingoffighters.png",
+      },
+    ],
+  },
+  {
+    title: "CAMPANHA, MUNDO ABERTO & TERROR",
+    games: [
+      {
+        title: "FNAF",
+        genre: "Terror / Sobrevivência",
+        platform: "PC/Notebook",
+        players: "1",
+        description: "Sobreviva cinco noites monitorando animatrônicos perigosos.",
+        tags: "terror, sobrevivência, suspense",
+        image: "/static/images/fivenigthsatfreddys.png",
       },
       {
-        title: "The Last of Us (I e II)",
+        title: "Nightmare Creatures",
+        genre: "Terror / Ação",
+        platform: "PC/Notebook",
+        players: "1",
+        description: "Um clássico sombrio de terror gótico com monstros assustadores.",
+        tags: "terror, ação, clássico",
+        image: "/static/images/nigthmarecreatures.png",
+      },
+      {
+        title: "Red Dead Redemption 2 (RDR2)",
+        genre: "Mundo Aberto / Aventura",
+        platform: "PC/Notebook e PS4",
+        players: "1",
+        description: "Uma obra-prima sobre a vida de foras da lei no Velho Oeste.",
+        tags: "mundo aberto, aventura, faroeste, campanha",
+        image: "/static/images/reddeadredemptionII.png",
+      },
+      {
+        title: "TLOU 1",
         genre: "Aventura / Drama",
         platform: "PS4",
         players: "1",
         description: "Uma jornada emocionante pela sobrevivência em um mundo pós-apocalíptico.",
         tags: "aventura, drama, sobrevivência, campanha",
-        image: "tlou.png",
+        image: "/static/images/thelastofus.png",
       },
       {
-        title: "Grand Theft Auto: San Andreas",
+        title: "TLOU 2",
+        genre: "Aventura / Drama",
+        platform: "PS4",
+        players: "1",
+        description: "A emocionante continuação da história de Ellie.",
+        tags: "aventura, drama, sobrevivência, campanha",
+        image: "/static/images/thelastofus.png",
+      },
+      {
+        title: "GTA SA",
         genre: "Mundo Aberto / Ação",
-        platform: "PC/Notebook",
+        platform: "PS2",
         players: "1",
         description: "O lendário clássico do PS2 com Carl Johnson no estado de San Andreas.",
         tags: "mundo aberto, ação, crime, campanha",
-        image: "gta-san-andreas.png",
+        image: "/static/images/gtaSA.png",
       },
       {
-        title: "Grand Theft Auto: V",
+        title: "GTA V",
         genre: "Mundo Aberto / Ação",
         platform: "PC/Notebook",
         players: "1",
         description: "Ação caótica em Los Santos com três protagonistas inesquecíveis.",
         tags: "mundo aberto, ação, crime, online",
-        image: "gta-v.png",
+        image: "/static/images/gtaV.png",
       },
       {
         title: "Dead Cells",
@@ -312,16 +346,16 @@ const gameCategories = [
         players: "1",
         description: "Ação rápida onde a morte é apenas o recomeço da jornada.",
         tags: "roguelike, metroidvania, ação, plataforma",
-        image: "dead-cells.png",
+        image: "/static/images/deadcells.png",
       },
       {
-        title: "Dragon Ball Z: Budokai Tenkaichi 3",
-        genre: "Luta 3D",
-        platform: "PS2 Emulator",
-        players: "1-2",
-        description: "Lutas clássicas e rápidas em arenas abertas 3D com personagens do DBZ.",
-        tags: "luta, anime, dragon ball, 3d",
-        image: "dbz-budokai.png",
+        title: "DOOM 2016",
+        genre: "FPS / Ação",
+        platform: "PS4",
+        players: "1",
+        description: "Destruição rápida de demônios no inferno ao som de heavy metal.",
+        tags: "fps, ação, tiro, campanha",
+        image: "/static/images/doom.png",
       },
     ],
   },
@@ -329,9 +363,9 @@ const gameCategories = [
 
 // === DADOS DOS PREÇOS ===
 const pricing = [
-  { time: "10 Minutos ou 1 Partida", price: "R$ 5,00" },
-  { time: "15 Minutos", price: "R$ 8,00" },
-  { time: "25 Minutos", price: "R$ 12,00" },
+  { price: "R$ 5,00", time: "10 min ou 1 partida" },
+  { price: "R$ 8,00", time: "15 minutos" },
+  { price: "R$ 12,00", time: "25 minutos" },
 ];
 
 function renderPricing() {
@@ -347,7 +381,69 @@ function renderPricing() {
     `;
     container.appendChild(bar);
   });
+
+  // Aviso sobre preços especiais
+  const notice = document.createElement("div");
+  notice.className = "pricing-notice";
+  notice.innerHTML = `
+    <span class="pricing-notice-icon">⭐</span>
+    <span>Alguns jogos têm um valor diferente.
+    <strong>Clique no jogo para conferir!</strong></span>
+  `;
+  container.appendChild(notice);
 }
+
+
+// === PREÇOS ESPECÍFICOS POR JOGO ===
+const specificPricing = [
+  // PS2
+  { name: "Bomba Patch",                           price: "R$ 3,00", detail: "1 partida",  platform: "PS2" },
+  { name: "Dragon Ball Z: Budokai Tenkaichi 3",     price: "R$ 3,00", detail: "10 min",    platform: "PS2" },
+  { name: "Need for Speed",                        price: "R$ 3,00", detail: "10 min",    platform: "PS2" },
+  { name: "GTA SA",                                price: "R$ 4,00", detail: "15 min",    platform: "PS2" },
+  // PS4
+  { name: "TLOU 1",                                price: "R$ 5,00", detail: "15 min",    platform: "PS4" },
+  { name: "TLOU 2",                                price: "R$ 5,00", detail: "15 min",    platform: "PS4" },
+  { name: "RDR2",                                  price: "R$ 5,00", detail: "15 min",    platform: "PS4" },
+  { name: "Injustice 2",                           price: "R$ 4,00", detail: "10 min",    platform: "PS4" },
+  { name: "It Takes Two",                          price: "R$ 4,00", detail: "10 min",    platform: "PS4" },
+  { name: "DOOM 2016",                             price: "R$ 4,00", detail: "10 min",    platform: "PS4" },
+  // Xbox ONE
+  { name: "FIFA 18",                               price: "R$ 3,50", detail: "1 partida", platform: "Xbox ONE" },
+  { name: "FIFA 19",                               price: "R$ 3,50", detail: "1 partida", platform: "Xbox ONE" },
+  { name: "FIFA 20",                               price: "R$ 3,50", detail: "1 partida", platform: "Xbox ONE" },
+  { name: "FC25",                                  price: "R$ 3,50", detail: "1 partida", platform: "Xbox ONE" },
+  { name: "Hitman 3",                              price: "R$ 4,00", detail: "10 min",    platform: "Xbox ONE" },
+  { name: "Rocket League",                         price: "R$ 2,50", detail: "10 min",    platform: "Xbox ONE" },
+  // PC
+  { name: "Brawlhalla",                            price: "R$ 3,00", detail: "10 min",    platform: "PC" },
+  { name: "Call of Duty",                          price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Cuphead",                               price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Dead Cells",                            price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "FNAF",                                  price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Gang Beasts",                           price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "GTA V",                                 price: "R$ 5,00", detail: "15 min",    platform: "PC" },
+  { name: "Towerfall Ascension",                   price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Overcooked! 2",                         price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Stick Fight: The Game",                 price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Tricky Towers",                         price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Minecraft",                             price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "MK11",                                  price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Naruto Shippuden: Ultimate Ninja Storm (do 1 ao 4)", price: "R$ 4,00", detail: "10 min", platform: "PC" },
+  { name: "Nightmare Creatures",                   price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Ultimate Chicken Horse",                price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Totally Accurate Battle Simulator (TABS)", price: "R$ 4,00", detail: "10 min", platform: "PC" },
+  { name: "The King of Fighters",                  price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "Mullet MadJack",                        price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+];
+
+// Busca o preço específico pelo título do jogo (busca parcial, case-insensitive)
+function getSpecificPrice(gameTitle) {
+  if (!gameTitle) return null;
+  const t = gameTitle.toLowerCase();
+  return specificPricing.find((sp) => t.includes(sp.name.toLowerCase()) || sp.name.toLowerCase().includes(t)) || null;
+}
+
 
 function setupTabs() {
   const tabValoresBtn = document.getElementById("tab-valores-btn");
@@ -543,7 +639,7 @@ function renderGames() {
             </svg>
           </div>
         </div>
-        <span class="game-card-title">${game.title}</span>
+        <span class="game-card-title">${game.title}${getSpecificPrice(game.title) ? ' ⭐' : ''}</span>
       `;
 
       li.appendChild(btn);
@@ -610,6 +706,32 @@ function openModal(game) {
   document.getElementById("modal-game-platform").textContent = game.platform;
   document.getElementById("modal-game-players").textContent = game.players;
   document.getElementById("modal-game-tags").textContent = game.tags || game.genre;
+
+  // Preço específico
+  const sp = getSpecificPrice(game.title);
+  let priceRow = document.getElementById("modal-specific-price-row");
+  if (!priceRow) {
+    priceRow = document.createElement("div");
+    priceRow.id = "modal-specific-price-row";
+    priceRow.className = "detail-row modal-price-highlight";
+    const modalDetails = document.querySelector("#game-modal .modal-details");
+    if (modalDetails) modalDetails.appendChild(priceRow);
+  }
+  if (sp) {
+    priceRow.style.display = "flex";
+    priceRow.innerHTML = `
+      <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="1" x2="12" y2="23"/>
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+      </svg>
+      <div>
+        <p class="detail-label">Preço especial ⭐</p>
+        <p class="detail-value modal-price-value">${sp.price} <span class="modal-price-detail">(${sp.detail})</span></p>
+      </div>
+    `;
+  } else {
+    priceRow.style.display = "none";
+  }
 
   overlay.classList.add("active");
   document.body.style.overflow = "hidden";

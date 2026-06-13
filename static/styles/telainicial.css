@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFBF2;
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ── Bandeiras no topo ── */
+.img-bandeiras-topo {
+    width: 100%;
+    max-width: 340px;
+    display: block;
+    margin: 0 auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* ── Container central ── */
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+
+    padding: 0 20px 40px;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── Logo principal ── */
+.hero-logo-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 7px;
+}
+
+.img-logo-principal {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ── Terminal typing tagline ── */
+.terminal-cmd {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'VT323', monospace;
+    font-size: 1.3rem;
+    color: #6d28d9;
+
+    margin-bottom: 67px;
+
+    gap: 6px;
+    line-height: 1;
+    text-align: center;
+}
+
+.prompt {
+    color: #eab308;
+    margin-right: 0.4em;
+}
+
+.terminal-typing {
+    font-family: 'VT323', monospace;
+    font-size: 1.3rem;
+    color: #6d28d9;
+    min-height: 1.2em;
+    line-height: 1;
+}
+
+/* ── Botões do menu ── */
+.menu-botoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 12px 16px;
+    background: #ffffff;
+    border-radius: 18px;
+    text-decoration: none;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(66, 0, 99, 0.12);
+}
+
+.btn-cardapio {
+    border-color: #c9b8f0;
+}
+
+.btn-lanhouse {
+    border-color: #f5d742;
+}
+
+.btn-icone-wrap {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.icone-cardapio {
+    background: #e8d8ff;
+}
+
+.icone-lanhouse {
+    background: #fdf0a0;
+}
+
+.btn-icone-img {
+    width: 68%;
+    height: 68%;
+    object-fit: contain;
+    display: block;
+}
+
+.btn-titulo {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d0045;
+}
+
+.btn-seta {
+    font-size: 1.6rem;
+    color: #888;
+    line-height: 1;
+}
+
+/* ── FOOTER ── */
+.site-footer {
+    width: 100%;
+    margin-top: auto;
+    border-top: 2px solid #3b0764;
+    background: #ffffff;
+}
+
+.footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.75rem 1.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.pix-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #3b0764;
+    color: #fff;
+    font-weight: 600;
+    font-size: .95rem;
+    padding: .55rem 1.2rem;
+    border-radius: .75rem;
+    text-decoration: none;
+    box-shadow: 3px 3px 0 #1e0a3c;
+}
+
+.footer-text {
+    font-size: .85rem;
+    color: #7c6eaa;
+    font-style: italic;
+}
+
+.bunting-banner {
+    width: 100%;
+    height: 130px;
+    background-image: url("/static/images/bandeiras.png");
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-size: 400px auto;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

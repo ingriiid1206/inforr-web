@@ -3,24 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inforró · Cardápio do Arraiá Geek do IFRN</title>
+  <title>Inforró · Cardápio do ArraiaSódoBom do IFRN</title>
   <meta name="description" content="Cardápio digital do Inforró: lanches, doces, bebidas e o almoço especial do dia. Arraiá da turma de Informática do IFRN." />
-  <meta property="og:title" content="Inforró · Arraiá Geek do IFRN" />
+  <meta property="og:title" content="Inforró · ArraiaSódoBom do IFRN" />
   <meta property="og:description" content="O cardápio digital do nosso arraiá. Bora encher o bucho?" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=VT323&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/static/cardapio.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/cardapio.css') }}" />
 </head>
 <body>
-
   <!-- Bunting top -->
   <div class="bunting-banner" aria-hidden="true"></div>
+
+  <!-- Botão Voltar (Abaixo das bandeiras) -->
+  <a href="{{ url_for('index') }}" style="position: absolute; top: 140px; left: 80px; z-index: 9999; width: 35px; height: 35px; display: block;">
+    <img src="{{ url_for('static', filename='images/voltar.png') }}" alt="Voltar" style="width: 100%; height: 100%; object-fit: contain;">
+  </a>
 
   <!-- ── HERO ──────────────────────────────── -->
   <section class="hero">
     <p class="terminal-cmd"><span class="prompt">&gt;</span> ./inforro --start</p>
-    <img src="/static/assets/inforró.png" alt="Inforró" class="hero-logo" />
+    <img src="{{ url_for('static', filename='images/inforro.png') }}" alt="Inforró" class="hero-logo" />
     <p class="terminal-typing" id="terminal-body"></p>
   </section>
 
@@ -57,7 +61,7 @@
   <section class="legend-section">
     <div class="legend-card">
       <div class="legend-header">
-        <span class="pixel-label">// legenda_alergenicos.json</span>
+        <span class="pixel-label">// legenda_alergênicos.json</span>
         <span class="legend-hint">fique de olho antes de pedir</span>
       </div>
       <div class="legend-grid" id="legend-grid"></div>
@@ -95,14 +99,12 @@
           <span class="sobre-line"></span>
         </div>
         <p class="sobre-text">
-          O <strong class="accent-strong">Inforró</strong> é o arraiá da turma de Informática do IFRN.
-          Toda a renda ajuda a financiar projetos, eventos e formaturas da galera de TI.
-          Comer aqui é apoiar nossos sonhos — obrigado por colar com a gente!
+          Aqui no <strong class="accent-strong">Inforró</strong>, chegue mais para saborear nossas delícias e aproveitar a festa. Obrigado pelo carinho e pela presença, meu povo! Toda a turma do IFRN agradece. Se achegue e sinta-se em casa!
         </p>
         <div class="tag-list">
-          <span class="tag">#turmaDeTI</span>
-          <span class="tag">#arraiáGeek</span>
-          <span class="tag">#IFRN</span>
+          <span class="tag">#turmaDeInfo  </span>
+          <span class="tag">#ArraisódoBom</span>
+          <span class="tag">#IFRNAP</span>
         </div>
       </div>
     </div>
@@ -111,10 +113,14 @@
   <!-- ── FOOTER ────────────────────────────── -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <a href="https://instagram.com/inforro.ifrn" target="_blank" rel="noopener" class="pix-btn">
-        @4.8401.111
+      <a href="https://www.instagram.com/4.8401.1m?igsh=djY2NzN0czh5enV5" target="_blank" rel="noopener" class="pix-btn">
+        @4.8401.1m
       </a>
+<<<<<<< HEAD
       <p class="footer-text">Valeu pelo apoio · feito com 💜 pela turma de INFORMÁTICA · IFRN</p>
+=======
+      <p class="footer-text">Valeu pelo apoio · feito com 💜 pelo 4 ano de informatica · IFRN</p>
+>>>>>>> 1ea774965aaba0ab563f2423351c1f32e94f8887
     </div>
     <div class="bunting-banner" aria-hidden="true"></div>
   </footer>
