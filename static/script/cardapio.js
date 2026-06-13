@@ -35,7 +35,7 @@ const MENU = [
     ingredientes: ["Farinha","Ovos","Leite","Açúcar","Cenoura","Chocolate","Amendoim"],
   },
   {
-    id: 3, nome: "Crepioca", sub: "Crepe recheado com chocolate derretido. Quente, doce e recheado. Três qualidades em perfeita coordenação.",
+    id: 3, nome: "Crepião", sub: "Crepe recheado com chocolate derretido. Quente, doce e recheado. Três qualidades em perfeita coordenação.",
     desc: "Crepe recheado com chocolate derretido. Quente, doce e recheado. Três qualidades em perfeita coordenação.",
     categoria: "doces", preco: 4.50, img: "/static/images/crepedoce.png",
     alergenicos: ["gluten","leite","ovo"],
@@ -63,7 +63,7 @@ const MENU = [
     ingredientes: ["Massa de crepe","Presunto","Queijo","Ovos","Leite"],
   },
   {
-    id: 8, nome: "Batatisco Frito", sub: "batata.exe",
+    id: 8, nome: "Batatisco Frito", sub: "O homem é livre para escolher o molho.",
     desc: "O homem é livre para escolher o molho.",
     categoria: "lanches", preco: 5.00, img: "/static/images/batatafrita.png",
     alergenicos: ["gluten"],
