@@ -76,15 +76,7 @@ const gameCategories = [
         tags: "party game, cooperativo, simulação",
         image: "/static/images/overcooked2.png",
       },
-      {
-        title: "God of War",
-        genre: "Campanha / Ação",
-        platform: "PS4",
-        players: "1",
-        description: "Homens, queimem a vila e o templo de Atenas!",
-        tags: "ação, aventura, puzzle, campanha",
-        image: "godofwar.png",
-      },
+    
       {
         title: "Stick Fight: The Game",
         genre: "Ação / Party Game",
@@ -340,6 +332,15 @@ const gameCategories = [
         image: "/static/images/gtaV.png",
       },
       {
+        title: "God of War",
+        genre: "Campanha / Ação",
+        platform: "PS4",
+        players: "1",
+        description: "Homens, queimem a vila e o templo de Atenas!",
+        tags: "ação, aventura, puzzle, campanha",
+        image: "/static/images/godofwar.png",
+      },
+      {
         title: "Dead Cells",
         genre: "Roguelike / Metroidvania",
         platform: "PC/Notebook",
@@ -363,7 +364,7 @@ const gameCategories = [
 
 // === DADOS DOS PREÇOS ===
 const pricing = [
-  { price: "R$ 5,00", time: "10 min ou 1 partida" },
+  { price: "R$ 3,00 - 5,00", time: "10 min ou 1 partida" },
   { price: "R$ 8,00", time: "15 minutos" },
   { price: "R$ 12,00", time: "25 minutos" },
 ];
