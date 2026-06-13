@@ -81,7 +81,7 @@ const MENU = [
   {
     id: 10, nome: "Alfajor", sub: "doce de leite e chocolate",
     desc: " alfajor recheado com doce de leite e coberto com chocolate. Doce de leite: o código-fonte da felicidade.",
-    categoria: "doces", preco: 4.00, img: "/static/images/Alfajor.png",
+    categoria: "doces", preco: 4.00, img: "/static/images/alfajor.png",
     alergenicos: ["leite","gluten"],
     ingredientes: ["Biscoito","Doce de leite","Chocolate"],
   },
@@ -95,7 +95,7 @@ const MENU = [
   {
     id: 12, nome: "Pudim", sub: "clássico da vovó",
     desc: "Pudim cremoso de leite condensado com calda dourada e sabor caseiro.",
-    categoria: "doces", preco: 4.50, img: "/static/cardapio/pudim.png",
+    categoria: "doces", preco: 4.50, img: "/static/images/pudim.png",
     alergenicos: ["leite","ovo"],
     ingredientes: ["Leite condensado","Leite","Ovos","Açúcar"],
   },
@@ -110,7 +110,7 @@ const MENU = [
   // BEBIDAS
   {
     id: 14, nome: "Refri (1L)",        sub: "", desc: "",
-    categoria: "bebidas", preco: 6.00, img: "/static/images/refri1l.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 6.00, img: "/static/images/refri1L.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 15, nome: "Refri (Lata)",      sub: "", desc: "",
