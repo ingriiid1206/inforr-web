@@ -12,9 +12,9 @@ const ALLERGENS = {
 
 // ── 3-DAY LUNCH DATA ───────────────────────────
 const REFEICOES = [
-  { dia: "1º dia", data: "16/06", nome: "Panqueca",      img: "/static/cardapio/panqueca.png" },
-  { dia: "2º dia", data: "17/06", nome: "Torta de Frango", img: "/static/cardapio/torta.png" },
-  { dia: "3º dia", data: "18/06", nome: "Lasanha",       img: "/static/cardapio/lasanha.png" },
+  { dia: "1º dia", data: "16/06", nome: "Panqueca",      img: "https://inforr-web.vercel.app/static/images/panqueca.png" },
+  { dia: "2º dia", data: "17/06", nome: "Lasanha", img: "https://inforr-web.vercel.app/static/images/lasanha.png" },
+  { dia: "3º dia", data: "18/06", nome: "Torta de Frango", img: "https://inforr-web.vercel.app/static/images/torta.png" },
 ];
 
 // ── MENU DATA ──────────────────────────────────

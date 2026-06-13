@@ -75,6 +75,15 @@ const gameCategories = [
         image: "overcooked2.png",
       },
       {
+        title: "God of War",
+        genre: "Campanha / Ação",
+        platform: "PS4",
+        players: "1",
+        description: "Homens, queimem a vila e o templo de Atenas!",
+        tags: "ação, aventura, puzzle, campanha",
+        image: "godofwar.png",
+      },
+      {
         title: "Stick Fight: The Game",
         genre: "Ação / Party Game",
         platform: "PC/Notebook",
