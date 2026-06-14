@@ -358,6 +358,15 @@ const gameCategories = [
         tags: "fps, ação, tiro, campanha",
         image: "/static/images/doom.png",
       },
+      {
+        title: "Mullet MadJack",
+        genre: "FPS / Roguelite",
+        platform: "PC/Notebook",
+        players: "1",
+        description: "FPS frenético em estilo anime cyberpunk onde velocidade e reflexos são essenciais para sobreviver.",
+        tags: "fps, ação, roguelite, cyberpunk, anime",
+        image: "/static/images/mulletmadjack.png",
+      },
     ],
   },
 ];
@@ -436,6 +445,7 @@ const specificPricing = [
   { name: "Totally Accurate Battle Simulator (TABS)", price: "R$ 4,00", detail: "10 min", platform: "PC" },
   { name: "The King of Fighters",                  price: "R$ 4,00", detail: "10 min",    platform: "PC" },
   { name: "Mullet MadJack",                        price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "God of War",                        price: "R$ 4,00", detail: "10 min",    platform: "PC" },
 ];
 
 // Busca o preço específico pelo título do jogo (busca parcial, case-insensitive)
