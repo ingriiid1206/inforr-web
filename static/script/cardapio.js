@@ -21,7 +21,7 @@ const REFEICOES = [
 const MENU = [
   // LANCHES
   {
-    id: 1, nome: "Disco Voador", sub: "Minipizza",
+    id: 1, nome: "Disco Voador", sub: "Molho especial e muçarela derretida na velocidade da luz.",
     desc: "Mini pizza assada na hora com molho especial e muçarela derretida.",
     categoria: "lanches", preco: 6.00, img: "/static/images/minipizza.png",
     alergenicos: ["gluten","leite"],
@@ -63,6 +63,13 @@ const MENU = [
     categoria: "doces", preco: 5.00, img: "/static/images/bolo.png",
     alergenicos: ["gluten","leite","ovo"],
     ingredientes: ["chocolate","coco","Ovos","Leite condensado","Margarina","Farinha"],
+  },
+  {
+    id: 18, nome: "Jeffimousse", sub: "Jedfimousse: o adjetivo perfeito para o substantivo sabor, nos modos limão e morango.",
+    desc: "Jedfimousse: o adjetivo perfeito para o substantivo sabor, nos modos limão e morango.",
+    categoria: "doces", preco: 4.00, img: "/static/images/mousse.png",
+    alergenicos: ["leite"],
+    ingredientes: ["Creme de leite","Leite condensado","Limão","Morango"],
   },
   {
     id: 8, nome: "Paçochica", sub: "Paçoca sabor de amendoim torrado para deixar o seu dia muy bueno.",
