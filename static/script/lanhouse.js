@@ -19,7 +19,7 @@ const carouselSlides = [
 
   {
     label: "Torneio de Brawlhalla",
-    value: "As inscrições estão abertas!",
+    value: "As inscrições estão abertas! ",
     image: "/static/images/torneiobrawlhalla.png",
     type: "info",
   },
