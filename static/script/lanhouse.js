@@ -95,15 +95,15 @@ const gameCategories = [
         tags: "estratégia, simulação, comédia",
         image: "/static/images/totallyacuratebattlesimulator.png",
       },
-      {
-        title: "Towerfall Ascension",
-        genre: "Ação / Party Game",
-        platform: "PC/Notebook",
-        players: "2-4",
-        description: "Combate de arco e flecha rápido e divertido para jogar com amigos.",
-        tags: "ação, party game, multiplayer",
-        image: "/static/images/towerfallascension.png",
-      },
+      //{
+      //  title: "Towerfall Ascension",
+      //  genre: "Ação / Party Game",
+      //  platform: "PC/Notebook",
+      //  players: "2-4",
+      //  description: "Combate de arco e flecha rápido e divertido para jogar com amigos.",
+      //  tags: "ação, party game, multiplayer",
+      //  image: "/static/images/towerfallascension.png",
+      //},
       {
         title: "Tricky Towers",
         genre: "Puzzle / Party Game",
@@ -254,15 +254,15 @@ const gameCategories = [
         tags: "luta, anime, ninja",
         image: "/static/images/narutostorm.png",
       },
-      {
-        title: "The King of Fighters",
-        genre: "Luta Arcade",
-        platform: "PC/Notebook",
-        players: "1-2",
-        description: "O clássico combate 2D de trios de lutadores lendários.",
-        tags: "luta, arcade, 2d",
-        image: "/static/images/thekingoffighters.png",
-      },
+      //
+      //  title: "The King of Fighters",
+      //  genre: "Luta Arcade",
+      //  platform: "PC/Notebook",
+      //  players: "1-2",
+      //  description: "O clássico combate 2D de trios de lutadores lendários.",
+      //  tags: "luta, arcade, 2d",
+      //  image: "/static/images/thekingoffighters.png",
+      //},
     ],
   },
   {
@@ -358,6 +358,15 @@ const gameCategories = [
         tags: "fps, ação, tiro, campanha",
         image: "/static/images/doom.png",
       },
+      {
+        title: "Mullet MadJack",
+        genre: "FPS / Roguelite",
+        platform: "PC/Notebook",
+        players: "1",
+        description: "FPS frenético em estilo anime cyberpunk onde velocidade e reflexos são essenciais para sobreviver.",
+        tags: "fps, ação, roguelite, cyberpunk, anime",
+        image: "/static/images/mulletmadjack.png",
+      },
     ],
   },
 ];
@@ -436,6 +445,7 @@ const specificPricing = [
   { name: "Totally Accurate Battle Simulator (TABS)", price: "R$ 4,00", detail: "10 min", platform: "PC" },
   { name: "The King of Fighters",                  price: "R$ 4,00", detail: "10 min",    platform: "PC" },
   { name: "Mullet MadJack",                        price: "R$ 4,00", detail: "10 min",    platform: "PC" },
+  { name: "God of War",                        price: "R$ 4,00", detail: "10 min",    platform: "PC" },
 ];
 
 // Busca o preço específico pelo título do jogo (busca parcial, case-insensitive)

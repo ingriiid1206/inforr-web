@@ -86,7 +86,7 @@ const MENU = [
     ingredientes: ["Biscoito","Doce de leite","Chocolate"],
   },
   {
-    id: 11, nome: "Crepe Doce", sub: "morango & chocolate",
+    id: 11, nome: "Crepião", sub: "morango & chocolate",
     desc: "Crepe doce quentinho recheado com morango, chocolate e leite condensado.",
     categoria: "doces", preco: 6.00, img: "/static/images/crepedoce.png",
     alergenicos: ["gluten","leite"],
