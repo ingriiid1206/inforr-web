@@ -117,19 +117,19 @@ const MENU = [
   // BEBIDAS
   {
     id: 14, nome: "Refri (1L)",        sub: "", desc: "",
-    categoria: "bebidas", preco: 6.00, img: "/static/images/refri1L.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 10.00, img: "/static/images/refri1L.png", alergenicos: [], ingredientes: [],
   },
   {
     id: 15, nome: "Refri (Lata)",      sub: "", desc: "",
-    categoria: "bebidas", preco: 6.00, img: "/static/images/refrilata.png", alergenicos: [], ingredientes: [],
+    categoria: "bebidas", preco: 5.00, img: "/static/images/refrilata.png", alergenicos: [], ingredientes: [],
   },
   {
-    id: 16, nome: "Refri (Garrafinha)", sub: "", desc: "",
-    categoria: "bebidas", preco: 6.00, img: "/static/images/refrigarrafinha.png", alergenicos: [], ingredientes: [],
+    id: 16, nome: "Suco Natural",      sub: "", desc: "",
+    categoria: "bebidas", preco: 3.50, img: "/static/images/suco.png", alergenicos: [], ingredientes: [],
   },
   {
-    id: 17, nome: "Suco",      sub: "", desc: "",
-    categoria: "bebidas", preco: 5.00, img: "/static/images/suco.png", alergenicos: [], ingredientes: [],
+    id: 17, nome: "Água Mineral", sub: "", desc: "",
+    categoria: "bebidas", preco: 3.00, img: "/static/images/refrigarrafinha.png", alergenicos: [], ingredientes: [],
   },
 ];
 
