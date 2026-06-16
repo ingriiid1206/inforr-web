@@ -28,7 +28,7 @@ const MENU = [
     ingredientes: ["Massa","Molho de tomate","Muçarela"],
   },
   {
-    id: 3, nome: "Crepe Segundo", sub: "Passou de primeira no sabor",
+    id: 3, nome: "Crepe Salgado", sub: "Passou de primeira no sabor",
     desc: "Crepe recheado com presunto e queijo, crocante por fora e cremoso por dentro.",
     categoria: "lanches", preco: 6.00, img: "/static/images/crepesalgado.png",
     alergenicos: ["gluten","leite","ovo"],
@@ -58,7 +58,7 @@ const MENU = [
 
   // DOCES
   {
-    id: 7, nome: "Bolo Junino", sub: "dechcolatw, pede muleke ",
+    id: 7, nome: "Bolo Junino", sub: "de chocolate, pé de moleque",
     desc: "Bolo fofinho com 3 opções diferentes.",
     categoria: "doces", preco: 5.00, img: "/static/images/bolo.png",
     alergenicos: ["gluten","leite","ovo"],
@@ -80,7 +80,7 @@ const MENU = [
   },
   {
     id: 10, nome: "Alfajor", sub: "doce de leite e chocolate",
-    desc: " alfajor recheado com doce de leite e coberto com chocolate. Doce de leite: o código-fonte da felicidade.",
+    desc: "Alfajor recheado com doce de leite e coberto com chocolate. Doce de leite: o código-fonte da felicidade.",
     categoria: "doces", preco: 4.00, img: "/static/images/alfajor.png",
     alergenicos: ["leite","gluten"],
     ingredientes: ["Biscoito","Doce de leite","Chocolate"],
